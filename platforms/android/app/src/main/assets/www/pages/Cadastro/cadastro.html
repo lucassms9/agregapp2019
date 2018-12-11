@@ -1,0 +1,221 @@
+<div data-page="cadastro" class="page">
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="#" class="link icon-only">
+					<i></i>
+			</div>
+			<div class="center">
+				<div class="logo">
+					<img class="imglogo" src="assets/img/logo.png">
+				</div>
+			</div>
+			<div class="right">
+
+				<a href="#" class="icon-only back">
+					<img class="btvoltar" src="assets/img/voltar-esquerda.png">
+				</a>
+
+
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="page-content">
+
+		<div class="row">
+			<div class="col-10">
+				<div class="barra"></div>
+			</div>
+			<div class="col-90">
+
+				<div class="text">
+					<p class="para1">É rapidinho!
+						<br>
+					</p>
+					<p class="para2">Informe seus dados
+						<br> para começarmos.</p>
+				</div>
+			</div>
+		</div>
+
+		<img class="pag1" src="assets/img/Groupic-repagination1.png">
+
+		<img style="padding-top:10px;" class="pag1" id="GetFoto" src="assets/img/camera.png" alt="" />
+		<div style="margin-top: 20px;text-align: center;">Clique para tirar sua foto.</div>
+		<img class="img-cad2" src="" id="minhaImagem" />
+		<hr/>
+
+		<form name="validation" action="#" method="POST" enctype="multipart/form-data">
+
+			<div class="list-block no-hairlines no-hairlines-between">
+				<ul>
+
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">Nome Completo</div>
+								<div class="item-input">
+									<input id="nome" type="text" />
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">Apelido</div>
+								<div class="item-input">
+									<input id="apelido" type="text" />
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">CPF</div>
+								<div class="item-input">
+
+									<input name="cpf" id="cpf_cad" type="tel" placeholder="Digite o numero do documento" onKeyDown="" required />
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">Data de Nascimento</div>
+								<div class="item-input">
+
+									<input name="data_nasc" id="data_nasc" type="tel" placeholder="DD/MM/AAAA" />
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">Celular</div>
+								<div class="item-input">
+									<input id="celular" type="tel" placeholder="(DD) 99999-9999" />
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">E-mail</div>
+								<div class="item-input">
+									<input id="email" type="email" />
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">CEP</div>
+								<div class="item-input">
+									<input id="cep" type="text" />
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">Bairro</div>
+								<div class="item-input">
+									<input id="bairro" type="text" />
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">Endereço</div>
+								<div class="item-input">
+									<input id="endereco" type="text" />
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">Cidade</div>
+								<div class="item-input">
+									<input disabled id="cidade" type="text" />
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">Estado</div>
+								<div class="item-input">
+									<input disabled id="uf" type="text" />
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">Senha</div>
+								<div class="item-input">
+									<input id="senha_cad" type="number" />
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">Confirmar Senha</div>
+								<div class="item-input">
+									<input id="confirma_senha" type="number" />
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="list-block aceite-termos">
+				<ul class="largura-touch">
+					<!-- Single chekbox item -->
+					<li>
+						<label style="padding: 0;" class="label-checkbox item-content">
+							<!-- Checked by default -->
+							<input id="termos" type="checkbox" name="my-checkbox" value="outros">
+							<div class="item-media">
+								<i class="icon icon-form-checkbox"></i>
+							</div>
+						</label>
+					</li>
+				</ul>
+				<a class="detalhe-termo" href="pages/Termo-de-Uso/termo_contrato.html">Aceito os
+					<span class="aceite-detalhe"> Termos de Uso</span>
+				</a>
+			</div>
+			<div class="walkthrough-actions" style="margin-bottom: 10px;">
+				<a type="submit" class="button button-index" id="buttonSubmit">PRÓXIMO</a>
+		</form>
+	</div>
+</div>
+<!-- End: Page Content -->
+</div>

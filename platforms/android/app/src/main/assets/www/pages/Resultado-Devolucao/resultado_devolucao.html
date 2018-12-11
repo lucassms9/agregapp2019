@@ -1,0 +1,81 @@
+<div data-page="resultado_devolucao" class="page">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left">
+        <a href="#" class="link icon-only open-panel">
+          <img style="width: 18px;" src="assets/img/home.png">
+        </a>
+      </div>
+      <div class="center">
+        <div class="logo">
+          <img class="imglogo" src="assets/img/logo.png">
+        </div>
+      </div>
+      <div class="right">
+        <a href="" class="link back icon-only">
+          <img class="btvoltar" src="assets/img/voltar-esquerda.png">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="content-block">
+      <div class="barra"></div>
+    </div>
+    <div class="text">
+      <p class="para1">Resultado da Devolução</p>
+    </div>
+    <div id="body-dev"></div>
+    <div class="card cardinfo segundoCard">
+      <div class="card-content card-content-padding">
+        Contrato:
+        <span id="contrato-dev-resultado"></span>
+        <br> Data de Descarga:
+        <span id="descarga-dev-resultado"></span>
+        <br> Cliente Destino:
+        <span id="destino-dev-resultado"></span>
+        <br> Endereço:
+        <span id="endereco-dev-resultado"></span>
+        <br> Cidade:
+        <span id="cidade-dev-resultado"></span>
+        <br> Telefone:
+        <span id="fone-dev-resultado"></span>
+        <br>
+      </div>
+    </div>
+
+    <p style="padding-left: 30px;margin-top: 10px;">
+      <span id="tipo_dev"></span> da Mercadoria</p>
+    <p style="padding-left: 30px;margin-top: 10px;">Motivo:
+      <span id="motivo"></span>
+    </p>
+
+
+    <div style="padding-left: 15px;margin-top: 15px;" class="content-block-title">Ação Combinada</div>
+    <!-- Inset content block -->
+    <div style="margin: 0 30px 0 30px !important;box-shadow: 0px 0px 7px rgba(0,10,0,.3) !important;background-color: #F3F3F3; padding-left:15px !important"
+      class="content-block inset">
+      <div class="content-block-inner">
+        <p id="dev-desc"></p>
+      </div>
+    </div>
+    <a style="display: none;" id="confirmar-acordo" class="button button-index" id="">OK, estou de acordo</a>
+    <div id="text-dev" style="display: none; margin-top: 0 !important;" class="text-info">
+      <p>
+        <br> Informada em
+        <span id="data-informa-dev"></span>
+      </p>
+      <p style="color: red" class="text1">Posicionamento Acionado</p>
+      <img width="70px" src="assets/img/confirma.png">
+    </div>
+    <div id="latlong-dev" style="margin-left: 18%; display: none;" class="">
+      <i style="font-size: 40px;position: absolute;margin-top: 11px;" class="fa fa-map-marker"></i>
+      <div style="font-size: 16px; font-weight: bold;margin-left: 30px;margin-bottom: 20px;margin-top: 10px;" class="Localidade">
+        Localidade:
+        <span id="cidade_estado9-dev-confirma"></span>
+        <br> Endereco:
+        <span id="endereco9-dev-confirma"></span>
+      </div>
+    </div>
+  </div>
+</div>

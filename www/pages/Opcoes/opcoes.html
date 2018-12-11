@@ -1,0 +1,687 @@
+<div data-page="opcoes" class="page">
+
+  <div class="views tabs toolbar-fixed">
+
+    <div id="tab1" class="view tab active">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="left">
+            <a href="#" class="link icon-only open-panel"><img style="width: 18px;" src="assets/img/home.png"></a>
+          </div>
+          <div class="center">
+            <div class="logo">
+              <img class="imglogo" src="assets/img/logo.png">
+            </div>
+          </div>
+          <div class="right">
+            <a id="voltar-opcoes" class="link icon-only">
+              <img class="btvoltar" src="assets/img/voltar-esquerda.png">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="page-content">
+        <div style="margin-bottom: 25px;" class="row">
+          <div class="col-10">
+            <div class="barra"></div>
+          </div>
+          <div class="col-90">
+            <p style="padding-top: 15px;" class="para1">Pref. de Fretes</p>
+          </div>
+        </div>
+        <div class="card segundoCard">
+          <div class="card-content">
+            <div style="    padding: 7px 15px 7px 15px !important;" class="card-content-inner">
+              <div class="row">
+                <div class="col-75">Filtros Favoritos</div>
+                <div id="botao-limpar" class="col-25">
+                  <img id="botao-filtro" style="margin-left: 9%;width: 25px;" src="assets/img/limpar.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 20px; margin-left: 16px;font-size: 16px;">Dados Origem</div>
+        <div class="list-block margin-opcoes">
+          <ul>
+            <!-- Smart select item -->
+            <li>
+              <!-- Additional "smart-select" class -->
+              <a href="#" class="item-link smart-select" data-open-in="popup" data-searchbar="true"
+                data-searchbar-placeholder="Pesquise o Estado" data-popup-close-text=" " data-searchbar-cancel="Cancelar">
+                <!-- select -->
+                <select name="estados" id="estados_origem">
+
+
+                </select>
+
+                <div class="item-content">
+                  <div style="display:inherit !important;" class="item-inner">
+                    <div class="item-title">Estado</div>
+                    <div id="escolhaestado-origem" class="item-after">Escolha</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+
+              <a href="#" class="item-link smart-select" data-open-in="popup" data-searchbar="true"
+                data-searchbar-placeholder="Pesquise a Cidade" data-popup-close-text=" " data-searchbar-cancel="Cancelar">
+
+                <select name="cidades" id="cidades_origem">
+                </select>
+
+                <div class="item-content">
+                  <div style="display:inherit !important;" class="item-inner">
+
+                    <div class="item-title">Cidade</div>
+
+                    <div id="escolhacidade-origem" class="item-after">Escolha</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+
+          </ul>
+        </div>
+
+        <div style="margin-top: 20px; margin-left: 16px; font-size: 16px;">Dados Destino</div>
+
+
+        <div class="list-block margin-opcoes">
+          <ul>
+            <!-- Smart select item -->
+            <li>
+              <!-- Additional "smart-select" class -->
+              <a href="#" class="item-link smart-select" data-open-in="popup" data-searchbar="true"
+                data-searchbar-placeholder="Pesquise o Estado" data-popup-close-text=" " data-searchbar-cancel="Cancelar">
+                <!-- select -->
+                <select name="estados" id="estados_destino">
+
+
+                </select>
+
+                <div class="item-content">
+                  <div style="display:inherit !important;" class="item-inner">
+                    <div class="item-title">Estado</div>
+                    <div id="escolhaestado-destino" class="item-after ">Escolha</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li>
+
+              <a href="#" class="item-link smart-select" data-open-in="popup" data-searchbar="true"
+                data-searchbar-placeholder="Pesquise a Cidade" data-popup-close-text=" " data-searchbar-cancel="Cancelar">
+
+
+                <select name="cidades" id="cidades_destino">
+
+                </select>
+
+                <div class="item-content">
+                  <div style="display:inherit !important;" class="item-inner">
+
+                    <div class="item-title">Cidade</div>
+
+                    <div id="escolhacidade-destino" class="item-after">Escolha</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+
+          </ul>
+        </div>
+
+
+
+        <div class="list-block">
+          <ul>
+            <!-- Single chekbox item -->
+            <li>
+              <label class="label-checkbox item-content">
+                <!-- Checked by default -->
+                <input id="box" type="checkbox" name="my-checkbox" value="Outros" checked="checked">
+                <div class="item-media">
+                  <i class="icon icon-form-checkbox"></i>
+                </div>
+                <div class="item-inner">
+
+                  <div class="item-title opcao-titulo">Desejo ver ofertas para todos os tipos de caminhões</div>
+
+                </div>
+              </label>
+            </li>
+
+          </ul>
+        </div>
+        <div class="row">
+          <a id="botao-salvar" class="button button-salvar">Salvar</a>
+          <!-- <a id="botao-limpar" class="button button-limpar">LIMPAR</a> -->
+        </div>
+
+
+      </div>
+    </div>
+
+    <div id="tab2" class="view tab">
+
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="left">
+            <a href="#" class="link icon-only open-panel"><img src="assets/img/home.png"></a>
+          </div>
+          <div class="center">
+            <div class="logo">
+              <img class="imglogo" src="assets/img/logo.png">
+            </div>
+          </div>
+          <div class="right">
+
+            <a href="" class="link back icon-only">
+              <img class="btvoltar" src="assets/img/voltar-esquerda.png">
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <div class="page-content">
+        <div class="content-block">
+          <div class="barra"></div>
+        </div>
+        <div class="text">
+
+          <p class="para2">Meu Perfil</p>
+        </div>
+
+        <div style="margin-bottom: 14px;" id="alterarfoto" class="row">
+          <img style="display: block;    
+                                  border: 2px solid #4A90E2;
+                                  border-radius: 100%; 
+                                  width: 140px;    
+                                  height: 140px;
+                                  margin-left: auto;
+                                  margin-right: auto;"
+            id="img-perfil">
+        </div>
+
+        <form name="validation" action="#" method="POST" enctype="multipart/form-data">
+          <div class="list-block accordion-list">
+            <ul>
+              <li class="accordion-item">
+                <a href="" class="item-link item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Dados Pessoais</div>
+                  </div>
+                </a>
+                <div style="background: #fff !important;" class="accordion-item-content">
+
+                  <div class="list-block no-hairlines no-hairlines-between">
+                    <ul>
+                      <li>
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title label">Celular</div>
+                            <div class="item-input">
+                              <input id="celular-perfil" type="tel" placeholder="(DD) 99999-9999" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title label">CPF</div>
+                            <div class="item-input">
+                              <input disabled id="cpf-perfil" type="tel" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-content">
+                          <div style="padding:0 !important;" class="item-inner">
+                            <div class="item-title label">E-mail</div>
+                            <div class="item-input">
+                              <input id="email-perfil" type="email" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title label">CEP</div>
+                            <div class="item-input">
+                              <input  id="cep-perfil" type="text" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title label">Bairro</div>
+                            <div class="item-input">
+                              <input id="bairro-perfil" type="text" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title label">Endereço</div>
+                            <div class="item-input">
+                              <input id="endereco-perfil" type="text" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title label">Cidade</div>
+                            <div class="item-input">
+                              <input disabled id="cidade-perfil" type="text" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title label">Estado</div>
+                            <div class="item-input">
+                              <input disabled id="uf-perfil" type="text" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-content">
+                          <div style="padding:0 !important;" class="item-inner">
+                            <div class="item-title label">Nome da mãe</div>
+                            <div class="item-input">
+                              <input id="nome-mae-perfil" type="text" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title label">Senha</div>
+                            <div class="item-input">
+                              <input id="senha-perfil" type="number" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </li>
+              <li class="accordion-item">
+                <a href="" class="item-link item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Dados do Veiculo</div>
+                  </div>
+                </a>
+                <div style="background: #fff !important;" class="accordion-item-content">
+
+                  <div class="list-block no-hairlines no-hairlines-between">
+                    <ul>
+                      <li>
+
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title label">Tipo de Caminhão</div>
+                            <div class="item-input">
+                              <select name="tipo_caminhao" id="tipo_caminhao-perfil">
+                                <option value="">Escolha</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title label">Tipo de Carroceria</div>
+                            <div class="item-input">
+                              <select name="tipo_carroceria" id="tipo_carroceria-perfil">
+                                <option value="">Escolha</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title label">Placa Cavalo</div>
+                            <div class="item-input">
+                              <input id="placa-cavalo-perfil" type="text" placeholder="" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title label">Placa Semi-Reboque</div>
+                            <div class="item-input">
+                              <input id="placa-reboque-perfil" type="text" placeholder="" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-content">
+
+                          <div class="item-inner">
+                            <div class="item-title label">Renavam</div>
+                            <div class="item-input">
+                              <input id="renavam-perfil" type="tel" placeholder="" maxlength="11" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="option item-title label">Caminhão Rastreável</div>
+                            <label style="margin-bottom: 10px;" class="label-switch">
+                              <input nome="rastreabilidade" id="rastreabilidade-perfil" type="checkbox" />
+                              <span class="checkbox"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="list-block">
+                          <div style="padding-left: 25px;" class="item-title">
+                            Sou Proprietário do Veículo
+                          </div>
+                          <ul>
+                            <li>
+                              <label style="padding-left: 23px;" class="label-checkbox item-content">
+                                <input type="radio" name="radio-proprietario" id="sim" value="sim">
+                                <div class="item-media">
+                                  <i class="icon icon-form-checkbox"></i>
+                                </div>
+                                <div style="margin-bottom:0 !important;    margin-top: 4px;" class="item-inner">
+                                  <div class="item-title opcao-titulo">Sim</div>
+                                </div>
+                              </label>
+                            </li>
+                            <li style="position: absolute;top: 0;left: 50%;">
+                              <label class="label-checkbox item-content">
+                                <!-- Checked by default -->
+                                <input type="radio" name="radio-proprietario" id="nao" value="nao">
+                                <div class="item-media">
+                                  <i class="icon icon-form-checkbox"></i>
+                                </div>
+                                <div style="margin-bottom:0 !important;margin-top: 4px;" class="item-inner">
+                                  <div style="" class="item-title opcao-titulo">Não</div>
+                                </div>
+                              </label>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="accordion-item">
+                <a href="" class="item-link item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Dados do Proprietário</div>
+                  </div>
+                </a>
+                <div style="background: #fff !important;" class="accordion-item-content">
+                  <div class="list-block no-hairlines no-hairlines-between">
+                    <ul>
+                      <li>
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title label">Nome Completo</div>
+                            <div class="item-input">
+                              <input id="nome-proprietario" type="text" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-content">
+                          <div style="padding:0 !important;" class="item-inner">
+                            <div class="item-title label">CPF/CNPJ</div>
+                            <div class="item-input">
+                              <input id="cpfCnpj-proprietario" name="cpfCnpj" type="tel" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title label">Celular</div>
+                            <div class="item-input">
+                              <input id="cel-proprietario" type="tel" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title label">Nome para Contato</div>
+                            <div class="item-input">
+                              <input id="nomeContato-proprietario" type="text" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title label">CEP</div>
+                            <div class="item-input">
+                              <input id="cep-proprietario" type="text" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title label">Bairro</div>
+                            <div class="item-input">
+                              <input id="bairro-proprietario" type="text" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title label">Endereço</div>
+                            <div class="item-input">
+                              <input id="endereco-proprietario" type="text" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title label">Cidade</div>
+                            <div class="item-input">
+                              <input disabled id="cidade-proprietario" type="text" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title label">Estado</div>
+                            <div class="item-input">
+                              <input disabled id="uf-proprietario" type="text" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="accordion-item">
+                <a href="" class="item-link item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Dados da CNH</div>
+                  </div>
+                </a>
+                <div style="background: #fff !important;" class="accordion-item-content">
+
+                  <div class="list-block no-hairlines no-hairlines-between">
+                    <ul>
+                      <li>
+                        <div class="item-content">
+                          <div id="alterarfotoCnh" class="item-inner">
+
+
+                            <img style="display: block;    
+                                  border: 2px solid #4A90E2;
+                                  width: 200px;    
+                                  height: 130px;
+                                  padding: 10px;
+                                  margin-left: auto;
+                                  margin-right: auto;"
+                              id="img-Cnh">
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="item-content">
+
+                          <div class="item-inner">
+                            <div class="item-title label">Registro CNH</div>
+                            <div class="item-input">
+                              <input id="registro_cnh-perfil" type="tel" placeholder="" maxlength="11" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="item-content">
+
+                          <div class="item-inner">
+                            <div class="item-title label">Data 1ª CNH</div>
+                            <div class="item-input">
+                              <input id="data_1_cnh-perfil" type="tel" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="item-content">
+
+                          <div class="item-inner">
+                            <div class="item-title label">Validade CNH</div>
+                            <div class="item-input">
+                              <input id="validade_cnh-perfil" type="tel" placeholder="" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="item-content">
+
+                          <div class="item-inner">
+                            <div class="item-title label">Código de segurança da CNH</div>
+                            <div class="item-input">
+                              <input id="codigo_seguranca_cnh-perfil" type="tel" placeholder="" maxlength="10" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-content">
+
+                          <div class="item-inner">
+                            <div class="item-title label">Categoria da CNH</div>
+                            <div class="item-input">
+                              <input id="categoria_cnh-perfil" type="text" placeholder="" maxlength="2" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="item-content">
+
+                          <div class="item-inner">
+                            <div class="item-title label">Número ANTT</div>
+                            <div class="item-input">
+                              <input id="numero_antt-perfil" type="tel" placeholder="" maxlength="15" />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                    </ul>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+
+          <div class="row">
+
+            <a type="submit" class="button button-index1" id="editar-dados">ATUALIZAR</a>
+
+            <a class="button button-index1" id="ButtonLogout">SAIR DO APP</a></div>
+
+        </form>
+      </div>
+    </div>
+
+    <div style="background: #F3F3F3 !important;" class="toolbar tabbar">
+      <div class="toolbar-inner">
+        <a href="#tab1" id="tab-1" class="tab-link active"><i class="fa fa-cog"></i>PREFERÊNCIAS DE FRETE</a>
+        <a href="#tab2" id="tab-2" class="tab-link"><i class="fa fa-user"></i>PERFIL</a>
+
+      </div>
+    </div>
+
+  </div>
+</div>

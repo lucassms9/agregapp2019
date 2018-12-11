@@ -1,0 +1,60 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\xampp\\htdocs\\agregaProd1\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rCN\\values-zh-rCN.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-messaging-11.6.2.aar\\e91ebf73117a3f6d80419fa711027e09\\res\\values-zh-rCN\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "96",
+                        "endOffsets": "343"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "263",
+                        "endColumns": "100",
+                        "endOffsets": "359"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.6.2.aar\\31be09e6a8dde3f7b8ff3c5f16551cf2\\res\\values-zh-rCN\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "289",
+                        "endColumns": "157",
+                        "endOffsets": "446"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "105",
+                        "endColumns": "157",
+                        "endOffsets": "258"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\4af110a56d400b592b544a896497eebd\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "364",
+                        "endColumns": "100",
+                        "endOffsets": "460"
+                    }
+                }
+            ]
+        }
+    ]
+}

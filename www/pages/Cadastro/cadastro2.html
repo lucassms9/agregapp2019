@@ -1,0 +1,357 @@
+<div data-page="cadastro-2" class="page">
+	<div class="navbar">
+		<div class="navbar-inner">
+
+			<div class="left">
+
+				<a href="#" class="icon-only ">
+
+				</a>
+			</div>
+			<div class="center">
+				<div class="logo">
+
+					<img class="imglogo" src="assets/img/logo.png">
+
+				</div>
+			</div>
+			<div class="right">
+				<a href="#" class="link icon-only">
+					<!-- <img class="btvoltar" src="assets/img/voltar-esquerda.png"> -->
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="page-content">
+
+		<div class="row">
+			<div class="col-10">
+				<div class="barra"></div>
+			</div>
+			<div class="col-90">
+
+				<div class="text">
+					<p class="para1">Agora Falta
+						<br>
+						<p class="para2">Pouco!</p>
+				</div>
+			</div>
+		</div>
+		<div class="slide-media">
+			<img class="pag2" src="assets/img/ic-repagination2.png" />
+
+			<img class="camera" id="GetFotoCNH" src="assets/img/camera.png" alt="" />
+			<p style="margin: 0">Clique para tira a foto da sua CNH.</p>
+			<p>
+				<img class="img-cad2" src="" id="minhaImagemCNH" />
+				<hr>
+			</p>
+		</div>
+
+		<form class="form2" action="#" method="post" id="ajax_form">
+			<div class="list-block no-hairlines no-hairlines-between">
+				<ul>
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">Tipo de Caminhão</div>
+								<div class="item-input">
+									<select name="tipo_caminhao" id="tipo_caminhao">
+										<option>Escolha</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">Tipo de Carroceria</div>
+								<div class="item-input">
+									<select name="tipo_carroceria" id="tipo_carroceria">
+										<option>Escolha</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-content">
+
+							<div class="item-inner">
+								<div class="item-title label">Placa Cavalo</div>
+								<div class="item-input">
+									<input id="placa-cavalo" type="text" placeholder="" />
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-content">
+
+							<div class="item-inner">
+								<div class="item-title label">Placa Semi-Reboque</div>
+								<div class="item-input">
+									<input id="placa-reboque" type="text" placeholder="" />
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-content">
+
+							<div class="item-inner">
+								<div class="item-title label">Renavam</div>
+								<div class="item-input">
+									<input id="renavam" type="tel" placeholder="" maxlength="11" />
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="item-content">
+
+							<div class="item-inner">
+								<div class="item-title label">Registro CNH</div>
+								<div class="item-input">
+									<input id="registro_cnh" type="tel" placeholder=""  />
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="item-content">
+
+							<div class="item-inner">
+								<div class="item-title label">Data 1ª CNH</div>
+								<div class="item-input">
+									<input id="data_1_cnh" type="tel" />
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="item-content">
+
+							<div class="item-inner">
+								<div class="item-title label">Validade CNH</div>
+								<div class="item-input">
+									<input id="validade_cnh" type="tel" placeholder="" />
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="item-content">
+
+							<div class="item-inner">
+								<div class="item-title label">Código de segurança da CNH</div>
+								<div class="item-input">
+									<input id="codigo_seguranca_cnh" type="tel" placeholder="" maxlength="10" />
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-content">
+
+							<div class="item-inner">
+								<div class="item-title label">Categoria da CNH</div>
+								<div class="item-input">
+									<input id="categoria_cnh" type="text" placeholder="" maxlength="2"  />
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="item-content">
+
+							<div class="item-inner">
+								<div class="item-title label">Número RNTRC (ANTT)</div>
+								<div class="item-input">
+									<input id="numero_antt" type="tel" placeholder="">
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="item-content">
+
+							<div class="item-inner">
+								<div class="item-title label">Nome Completo da Mãe</div>
+								<div class="item-input">
+									<input id="nome_mae" type="text" placeholder="" />
+								</div>
+							</div>
+						</div>
+					</li>
+
+
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="option item-title label">Caminhão Rastreável</div>
+								<label class="label-switch">
+									<input id="rastreabilidade" type="checkbox" />
+									<span class="checkbox"></span>
+								</label>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="list-block">
+				<div style="padding-left: 25px;" class="item-title">
+					Sou Proprietário do Veículo
+				</div>
+				<ul>
+					<li>
+						<label style="padding-left: 23px;" class="label-checkbox item-content">
+							<input type="radio" name="radio-proprietario" id="sim" value="sim">
+							<div class="item-media">
+								<i class="icon icon-form-checkbox"></i>
+							</div>
+							<div style="margin-bottom:0 !important;    margin-top: 4px;" class="item-inner">
+								<div class="item-title opcao-titulo">Sim</div>
+							</div>
+						</label>
+					</li>
+					<li style="position: absolute;top: 0;left: 50%;">
+						<label class="label-checkbox item-content">
+							<!-- Checked by default -->
+							<input type="radio" name="radio-proprietario" id="nao" value="nao">
+							<div class="item-media">
+								<i class="icon icon-form-checkbox"></i>
+							</div>
+							<div style="margin-bottom:0 !important;margin-top: 4px;" class="item-inner">
+								<div style="" class="item-title opcao-titulo">Não</div>
+							</div>
+						</label>
+					</li>
+
+				</ul>
+			</div>
+			<div id="dados-proprietario" style="display: none;" class="list-block no-hairlines no-hairlines-between">
+				<ul>
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">Nome Completo</div>
+								<div class="item-input">
+									<input id="nome-proprietario" type="text" />
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">CPF/CNPJ</div>
+								<div class="item-input">
+									<input id="cpfCnpj-proprietario" name="cpfCnpj" type="text" />
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">Telefone</div>
+								<div class="item-input">
+									<input id="tel-proprietario" type="tel" placeholder="(DD) 9999-9999" />
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">Celular</div>
+								<div class="item-input">
+									<input id="cel-proprietario" type="tel" placeholder="(DD) 99999-9999" />
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">Nome para Contato</div>
+								<div class="item-input">
+									<input id="nomeContato-proprietario" type="text" />
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">CEP</div>
+								<div class="item-input">
+									<input id="cep-proprietario" type="text" />
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">Bairro</div>
+								<div class="item-input">
+									<input id="bairro-proprietario" type="text" />
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">Endereço</div>
+								<div class="item-input">
+									<input id="endereco-proprietario" type="text" />
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">Cidade</div>
+								<div class="item-input">
+									<input disabled id="cidade-proprietario" type="text" />
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title label">Estado</div>
+								<div class="item-input">
+									<input disabled id="uf-proprietario" type="text" />
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="walkthrough-actions">
+				<a class="button button-index" id="buttonSubmit2">PRÓXIMO</a>
+
+		</form>
+
+	</div>
+</div>
+<!-- End: Page Content -->
+</div>

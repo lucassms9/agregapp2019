@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "214016281064",
+    "firebase_url": "https://agrega-notification.firebaseio.com",
+    "project_id": "agrega-notification",
+    "storage_bucket": "agrega-notification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214016281064:android:61f880d9ceb57685",
+        "android_client_info": {
+          "package_name": "com.solucoes.agrega"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214016281064-35c9m53fg1jfq9rsbif6c4nb8hapvnpi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZpnv69FeGzbiahOFr-9t1MxJl_awv3t0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

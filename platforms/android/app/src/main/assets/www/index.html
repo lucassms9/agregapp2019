@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <style type="text/css">
+        @font-face {
+            font-family: Roboto;
+            src: url('vendor/font-awesome/fonts/Roboto-Regular.ttf');
+        }
+    </style>
+
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <!-- Begin: Android Meta Tags -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#333333" />
+    <!-- Status bar color -->
+
+    <!-- <link rel="icon" type="image/png" sizes="192x192" href="assets/custom/favicons/android-chrome-192x19.png" />
+        <link rel="manifest" href="assets/custom/favicons/manifest.json" /> -->
+    <!-- End: Android Meta Tags -->
+
+    <!-- Begin: iOS Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- Disable automatic detection and formatting of possible phone numbers -->
+
+    <!-- Begin: Stylesheets -->
+    <link rel="stylesheet" href="vendor/framework7/css/framework7.material.min.css" />
+    <link rel="stylesheet" href="vendor/framework7/css/framework7.material.colors.min.css" />
+    <link rel="stylesheet" href="vendor/framework7-plugins/keypad/framework7.keypad.min.css" />
+    <link rel="stylesheet" href="vendor/framework7-plugins/indexed-list/framework7.indexed-list.min.css" />
+    <link rel="stylesheet" href="vendor/framework7-plugins/toast/toast.css" />
+    <link rel="stylesheet" href="vendor/framework7-plugins/tour-guide/tour-guide.css" />
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="vendor/hamburgers/hamburgers.min.css" />
+    <link rel="stylesheet" href="vendor/material-icons/material-icons.css" />
+    <link rel="stylesheet" href="vendor/nectar/nectar.css" />
+    <link rel="stylesheet" href="vendor/pattern-lock/patternLock.css" />
+    <link rel="stylesheet" href="vendor/rateyo/jquery.rateyo.min.css" />
+    <link rel="stylesheet" href="vendor/tooltipster/css/tooltipster.bundle.min.css" />
+    <link rel="stylesheet" href="vendor/tooltipster/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-borderless.min.css" />
+
+    <link rel="stylesheet" href="theme/pages.css" />
+    <!-- End: Stylesheets -->
+
+    <title>Agrega</title>
+
+</head>
+
+<body class="theme-teal">
+    <div class="statusbar-overlay"></div>
+    <div class="panel-overlay"></div>
+
+    <!-- Begin: Left Side Panel -->
+    <div class="panel panel-left panel-reveal">
+
+        <a class="close-panel" id="perfil">
+
+            <div class="panel-header">
+                <div class="user-info">
+
+                    <img id="minhafotoPerfil" class=" user-photo foto-perfil" src="" alt="Avatar" />
+
+                    <div class="user-name"></div>
+
+                </div>
+            </div>
+        </a>
+        <div class="list-block no-hairlines no-hairlines-between">
+            <ul>
+                <li>
+                    <a href="pages/Dashboard/dashboard.html" class="item-link close-panel">
+                        <div class="item-content sobreamento-menu" style="">
+                            <div class="item-media">
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">Início</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="pages/Ofertas-Mapa/ofertas_maps.html" class="item-link close-panel">
+                        <div class="item-content sobreamento-menu2" style="">
+                            <div class="item-media">
+                                <i class="fa fa-cubes" aria-hidden="true"></i>
+                            </div>
+                            <div style="margin-left: 8px;" class="item-inner">
+                                <div class="item-title">Oferta de Cargas</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="pages/Minha-Agenda/minha_agenda.html" class="item-link close-panel">
+                        <div class="item-content sobreamento-menu2">
+                            <div class="item-media">
+                                <i class="fa fa-truck" aria-hidden="true"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">Minhas Viagens</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pages/Minhas-Ofertas/minhas_ofertas.html" class="item-link close-panel">
+                        <div class="item-content sobreamento-menu2">
+                            <div class="item-media">
+                                <i class="fa fa-gavel" aria-hidden="true"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">Minhas Ofertas</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="opcoes-frete" class="item-link close-panel">
+                        <div class="item-content sobreamento-menu2">
+                            <div class="item-media">
+                                <i class="fa fa-cogs" aria-hidden="true"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">Pref. de Fretes</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="pages/Fale-Conosco/fale_conosco.html" class="item-link close-panel">
+                        <div class="item-content sobreamento-menu2">
+                            <div class="item-media">
+                                <i class="fa fa-comments" aria-hidden="true"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">Fale Conosco</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- End: Right Side Panel -->
+    <div class="views">
+        <div class="view view-main">
+            <div class="pages navbar-fixed">
+                <div data-page="index" class="page no-navbar">
+                    <div data-page="walkthrough" class="page no-navbar">
+                        <!-- Begin: Page Content -->
+                        <div class="page-content">
+                            <div class="walkthrough">
+                                <div class="swiper-container walkthrough-container">
+                                    <div class="swiper-wrapper walkthrough-slides">
+                                        <!-- Begin: Slide -->
+                                        <span id="slide11"></span>
+                                        <!-- End: Slide -->
+                                    </div>
+                                    <div class="swiper-pagination walkthrough-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contatos Popup -->
+    <div class="popup popup-about">
+        <style>
+            .navbar::after {
+                content: none;
+            }
+        </style>
+        <div style="background-color: #fff;" class="navbar">
+            <div class="navbar-inner">
+                <div class="left">
+                    <a href="#" class="link icon-only open-panel"></a>
+                </div>
+                <div class="center">
+                    <div style="    margin-top: 12px;width: 104px;" class="logo">
+                        <img class="imglogo" src="assets/img/logo.png" width="104px">
+                    </div>
+                </div>
+                <div class="right">
+                    <a id="voltar-agenda" href="" class="close-popup">
+                        <img class="btvoltar" src="assets/img/voltar-esquerda.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div style="padding: 0 !important;margin-top: 10px !important;" class="content-block">
+            <div style="   
+            position: relative;
+            background-color: #4A90E2;
+            width: 10px;
+            height: 50px;"
+                class="barra"></div>
+            <div style="
+            bottom: 40px;
+            position: relative;
+            margin-left: 25px;"
+                class="text">
+                <p style=" 
+            color: #000;   
+            font-size: 24px;
+            margin: 0" class="para1">Formas
+                    de Contato</p>
+
+            </div>
+
+            <div style=" font-size: 17px;   padding: 0 15px;" class="conteudo">
+                <div id="botao-win">
+                    <i class="fa fa-phone" style=" font-size: 20px;" aria-hidden="true"></i>
+                    <a style="margin-left: 8px;">
+                        <span id="tel-cliente"></span> Ligar Agora!</a>
+                </div>
+                <hr>
+                <div>
+                    <div id="button-whats">
+
+                        <i class="fa fa-whatsapp" style="color: #34af23; font-size: 20px;" aria-hidden="true"></i>
+                        <span id="whats-cliente"></span>
+                        <a style="margin-left: 5px;"> Chamar no Whats!</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  MODAL PARA DETALHES DA CARGA MULTIPLAS ENTREGAS  -->
+
+    <!-- Contatos Popup -->
+    <div class="popup popup-oferta-detalhes">
+        <style>
+            .navbar::after {
+                content: none;
+            }
+        </style>
+        <div style="background-color: #fff;" class="navbar">
+            <div class="navbar-inner">
+                <div class="left">
+                    <a href="#" class="link icon-only open-panel"></a>
+                </div>
+                <div class="center">
+                    <div style="    margin-top: 12px;width: 104px;" class="logo">
+                        <img class="imglogo" src="assets/img/logo.png" width="104px">
+                    </div>
+                </div>
+                <div class="right">
+                    <a id="voltar-agenda" href="" class="close-popup">
+                        <img class="btvoltar" src="assets/img/voltar-esquerda.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div style="padding: 0 !important;margin-top: 10px !important;" class="content-block">
+            <div style="   
+                position: relative;
+                background-color: #4A90E2;
+                width: 10px;
+                height: 50px;"
+                class="barra"></div>
+            <div style="
+                bottom: 40px;
+                position: relative;
+                margin-left: 25px;"
+                class="text">
+                <p style=" 
+                color: #000;   
+                font-size: 24px;
+                margin: 0"
+                    class="para1">Detalhes Da Oferta</p>
+
+            </div>
+
+            <div style=" font-size: 17px;   padding: 0 15px;" class="conteudo-oferta">
+            </div>
+        </div>
+    </div>
+
+    <!--  MODAL PARA CHAT  -->
+
+    <!-- Contatos Popup -->
+    <div class="popup popup-chat">
+        <div class="views tabs toolbar-fixed">
+            <style>
+                .navbar::after {
+        content: none;
+    }
+</style>
+            <div style="background-color: #fff;" class="navbar">
+                <div style="padding: 13px;padding-top: 30px;" class="navbar-inner">
+                    <div class="left">
+                        <a href="#" class="link icon-only open-panel"></a>
+                    </div>
+                    <div style="left: -5px;" class="center">
+                        <div style="margin-top: 5px;" class="logo">
+                            <img class="imglogo" src="assets/img/logo.png" width="142px">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <a id="voltar-agenda" href="" class="close-popup">
+                            <img class="btvoltar" src="assets/img/voltar-esquerda.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="list-mensagem1" style="padding-top: 40px;padding-bottom:0 ;height: 100%;" class="page-content">
+                <div style="height: 90%;overflow: scroll;" id="list-messages" class="messages">
+                    <ul id="message-lista">
+                        <!-- CONTEUDO DO CHAT -->
+                    </ul>
+                </div>
+            </div>
+
+            <div style="background: #F3F3F3 !important;" class="toolbar messagebar">
+                <div class="toolbar-inner">
+                    <textarea id="message-text" placeholder="Digite sua mensagem" class=""></textarea>
+                    <a id="newMessage" style="  width: 35px;
+                                background-color: #40bbe9;
+                                border-radius: 50%;
+                                height: 35px; margin: 5px;"
+                        href="#" class="link">
+                        <i style="  font-size: 20px;
+                                    text-align: center;
+                                    padding: 5px;"
+                            class="fa fa-paper-plane" aria-hidden="true">
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    
+    <script type="text/javascript" src="vendor/jquery/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="app/env.js"></script>
+    <script type="text/javascript" src="vendor/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="vendor/framework7-plugins/keypad/framework7.keypad.min.js"></script>
+    <script type="text/javascript" src="vendor/framework7-plugins/indexed-list/framework7.indexed-list.min.js"></script>
+    <script type="text/javascript" src="vendor/framework7-plugins/toast/toast.js"></script>
+    <script type="text/javascript" src="vendor/framework7-plugins/tour-guide/tour-guide.js"></script>
+    <script type="text/javascript" src="vendor/jquery-validation/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery-validation/additional-methods.min.js"></script>
+    <script type="text/javascript" src="vendor/pattern-lock/patternLock.min.js"></script>
+    <script type="text/javascript" src="vendor/rateyo/jquery.rateyo.min.js"></script>
+    <script type="text/javascript" src="vendor/snazzy-maps/snazzy-maps.js"></script>
+    <script type="text/javascript" src="vendor/tooltipster/js/tooltipster.bundle.min.js"></script>
+    <script type="text/javascript" src="vendor/vivus/vivus.min.js"></script>
+    <script type="text/javascript" src="vendor/countdown/countdown.js"></script>
+    <script type="text/javascript" src="vendor/jquery-mask/jquery.mask.js"></script>
+    <script type="text/javascript" src="vendor/markerclusterer/markerclusterer.js"></script>
+    <script type="text/javascript" src="vendor/geocomplete/jquery.geocomplete.min.js"></script>
+    <script type="text/javascript" src="app/init.js"></script>
+
+    <script>
+        function initMap() {}
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpjwTOyKGuinQNa8NgDe-yAuDRVmLEc4I&callback=initMap" type="text/javascript"></script>
+
+    <script type="text/javascript" src="services/RestService.js"></script>
+    <script type="text/javascript" src="services/CepService.js"></script>
+    <script type="text/javascript" src="services/GpsService.js"></script>
+    <script type="text/javascript" src="services/CameraService.js"></script>
+    <script type="text/javascript" src="services/PushNotificationService.js"></script>
+    <script type="text/javascript" src="services/MotoristaService.js"></script>
+    <script type="text/javascript" src="services/OfertaService.js"></script>
+    <script type="text/javascript" src="services/Util.js"></script>
+
+    <script type="text/javascript" src="pages/Dashboard/dashboard.js"></script>
+    <script type="text/javascript" src="pages/Ofertas-Detalhes/oferta_detalhes.js"></script>
+    <script type="text/javascript" src="pages/Perdedor-Oferta-Direta/perdedor_Oferta.js"></script>
+    <script type="text/javascript" src="pages/Perdedor/perdedor.js"></script>
+    <script type="text/javascript" src="pages/Vencedor/vencedor.js"></script>
+    <script type="text/javascript" src="pages/Lances/lances.js"></script>
+    <script type="text/javascript" src="pages/Oferta-Direta/tipo_oferta.js"></script>
+    <script type="text/javascript" src="pages/Minhas-Ofertas/minhas_ofertas.js"></script>
+    <script type="text/javascript" src="pages/Minha-Agenda/Viagens-Ativas.js"></script>
+    <script type="text/javascript" src="pages/Minha-Agenda/Viagens-Finalizadas.js"></script>
+    <script type="text/javascript" src="pages/Opcoes/opcoes.js"></script>
+    <script type="text/javascript" src="pages/Ofertas-Filtro/ofertas_filtro.js"></script>
+    <script type="text/javascript" src="pages/Ofertas/ofertas.js"></script>
+    <script type="text/javascript" src="pages/Ofertas-Mapa/oferta_map.js"></script>
+    <script type="text/javascript" src="pages/Filtro/filtro.js"></script>
+    <script type="text/javascript" src="pages/Apresentacao-Descarga-Final/apresentacao_descarga_final.js"></script>
+    <script type="text/javascript" src="pages/Apresentacao-Descarga-Final-Viagens/apresentacao_descarga_final_viagens.js"></script>
+    <script type="text/javascript" src="pages/Entregas-Home/entregas_home.js"></script>
+    <script type="text/javascript" src="pages/Ocorrencia/ocorrencia.js"></script>
+    <script type="text/javascript" src="pages/Problema-Caminhao/problema_caminhao.js"></script>
+    <script type="text/javascript" src="pages/Problema-Caminhao-Final/problema_caminhao_final.js"></script>
+    <script type="text/javascript" src="pages/Problema-Estrada/problema_estrada.js"></script>
+    <script type="text/javascript" src="pages/Problema-Estrada-Final/problema_estrada_final.js"></script>
+    <script type="text/javascript" src="pages/Informa-Atraso/informa_atraso.js"></script>
+    <script type="text/javascript" src="pages/Informa-Atraso-Final/informa_atraso_final.js"></script>
+    <script type="text/javascript" src="pages/Resultado-Devolucao/resultado_devolucao.js"></script>
+    <script type="text/javascript" src="pages/Finalizando-Descarga/finalizacao_descarga.js"></script>
+    <script type="text/javascript" src="pages/Finalziando-Descarga-Final/finalizacao_descarga_final.js"></script>
+    <script type="text/javascript" src="pages/Fale-Conosco/fale_conosco.js"></script>
+    <script type="text/javascript" src="pages/Chegada-Origem/chegada_origem.js"></script>
+    <script type="text/javascript" src="pages/Perfil/perfil.js"></script>
+    <script type="text/javascript" src="pages/Devolucao-Home/devolucao_home.js"></script>
+    <script type="text/javascript" src="pages/Devolucao-Total/devolucao_total.js"></script>
+    <script type="text/javascript" src="pages/Devolucao-Parcial/devolucao_parcial.js"></script>
+    <script type="text/javascript" src="pages/Devolucao-Total-Final/devolucao_total_final.js"></script>
+    <script type="text/javascript" src="pages/Devolucao-Parcial-Final/devolucao_parcial_final.js"></script>
+    <script type="text/javascript" src="pages/Agenda-Detalhe/agenda_detalhe.js"></script>
+    <script type="text/javascript" src="pages/Apresentacao/walkthrough.js"></script>
+    <script type="text/javascript" src="pages/Login/login.js"></script>
+    <script type="text/javascript" src="pages/Esqueci-Senha/esqueci_senha.js"></script>
+    <script type="text/javascript" src="pages/Esqueci-Senha/esqueci_senha2.js"></script>
+    <script type="text/javascript" src="pages/Cadastro/cadastro.js"></script>
+    <script type="text/javascript" src="pages/Cadastro/cadastro2.js"></script>
+    <script type="text/javascript" src="pages/Termo-de-Uso/termo_contrato.js"></script>
+    <script type="text/javascript" src="pages/Ofertas-Mapa-Destino/oferta_destino_map.js"></script>
+    <script type="text/javascript" src="pages/Avisos/avisos.js"></script>
+    <script type="text/javascript" src="pages/Avisos-Detalhes/avisos-detalhes.js"></script>
+
+    <script type="text/javascript">
+        (function () {
+            myApp.init();
+
+            // Conversation flag
+            var conversationStarted = false;
+
+            // Init Messages
+            var myMessages = myApp.messages('.messages', {
+                autoLayout: true
+            });
+
+            // Init Messagebar
+            var myMessagebar = myApp.messagebar('.messagebar');
+
+        })();
+    </script>
+
+    <script>
+        $('#perfil').click(function (e) {
+            localStorage.setItem('navAtiva', 'perfil');
+            mainView.router.loadPage('pages/Opcoes/opcoes.html');
+        });
+
+        $('#opcoes-frete').click(function (e) {
+            localStorage.setItem('navAtiva', 'opcoes');
+            mainView.router.loadPage('pages/Opcoes/opcoes.html');
+        });
+
+        var foto_perfil = localStorage.getItem('motorista.img_url');
+        var elementFoto = document.getElementById('minhafotoPerfil');
+
+        if (foto_perfil == 'null') {
+            elementFoto.src = 'assets/img/user-profile.png';
+        } else {
+            // elementFoto.src = 'assets/img/user-profile.png';
+            elementFoto.src = BASE_URL_IMAGE + '/motoristas/' + foto_perfil;
+            //  $('#minhafotoPerfil').attr('src', BASE_URL_IMAGE + '/motoristas/' + foto_perfil);
+        }
+
+       const validaVersaoApp = function () {
+
+            var callBackVersion = function (version) {
+                console.log(version)
+
+                var parameters = {
+                    versao: version
+                }
+
+                var successCallback = function (data) {
+                    console.log(data)
+                    var retorno = data.result;
+
+                    if (retorno.status == 500) {
+                        myApp.modal({
+                            title: 'AGREGA TRUCK',
+                            text: 'Para continuar utilizando o aplicativo Agrega Truck, você precisa instalar a nova versão. Deseja fazer isso agora ? ',
+                            buttons : [{
+                                    text: 'NÃO',
+                                    onClick: function () {
+                                        navigator.app.exitApp();
+                                    }
+                                },
+                                {
+                                    text: 'SIM',
+                                    onClick: function () {
+                                        window.open('market://details?id=com.solucoes.agrega',
+                                            '_system', 'location=yes');
+                                    }
+                                },
+                            ]
+                        });
+                    }
+                }
+
+                RestService.connect(
+                    "motoristas/validaVersao",
+                    "GET",
+                    parameters,
+                    true,
+                    successCallback,
+                    true,
+                    null,
+                    true
+                );
+            }
+
+            readConfig(callBackVersion);
+        }
+
+        validaVersaoApp();
+        setInterval(validaVersaoApp, 10000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.solucoes.agrega" ios-CFBundleVersion="6" version="1.1.19" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Battery">
+        <param name="android-package" value="org.apache.cordova.batterystatus.BatteryListener" />
+    </feature>
+    <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-navigation href="cdvfile:*" />
+    <feature name="Capture">
+        <param name="android-package" value="org.apache.cordova.mediacapture.Capture" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
+    </feature>
+    <feature name="Globalization">
+        <param name="android-package" value="org.apache.cordova.globalization.Globalization" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <feature name="Vibration">
+        <param name="android-package" value="org.apache.cordova.vibration.Vibration" />
+    </feature>
+    <feature name="BrowserTab">
+        <param name="android-package" value="com.google.cordova.plugin.browsertab.BrowserTab" />
+    </feature>
+    <feature name="PushNotification">
+        <param name="android-package" value="com.adobe.phonegap.push.PushPlugin" />
+    </feature>
+    <feature name="AppAvailability">
+        <param name="android-package" value="com.ohh2ahh.appavailability.AppAvailability" />
+    </feature>
+    <feature name="SocialSharing">
+        <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>Agrega Truck</name>
+    <description>
+        Uma solução para caminhoneiros e embarcadores.
+    </description>
+    <author email="support@phonegap.com" href="http://phonegap.com">
+        Mobitap Team
+    </author>
+    <content src="index.html" />
+    <access allows-local-networking="true" origin="*" />
+    <allow-navigation href="*" />
+    <allow-intent href="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="whatsapp:*" subdomains="true" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <icon density="ldpi" src="/res/icon/android/drawable-ldpi-icon.png" />
+    <icon density="mdpi" src="/res/icon/android/drawable-mdpi-icon.png" />
+    <icon density="hdpi" src="/res/icon/android/drawable-hdpi-icon.png" />
+    <icon density="xhdpi" src="/res/icon/android/drawable-xhdpi-icon.png" />
+    <icon density="xxhdpi" src="/res/icon/android/drawable-xxhdpi-icon.png" />
+    <icon density="xxxhdpi" src="/res/icon/android/drawable-xxxhdpi-icon.png" />
+    <splash platform="android" qualifier="ldpi" src="/res/screen/android/screen-ldpi-portrait.png" />
+    <splash platform="android" qualifier="mdpi" src="/res/screen/android/screen-mdpi-portrait.png" />
+    <splash platform="android" qualifier="hdpi" src="/res/screen/android/screen-hdpi-portrait.png" />
+    <splash platform="android" qualifier="xhdpi" src="/res/screen/android/screen-xhdpi-portrait.png" />
+    <allow-intent href="market:*" />
+    <resource-file src="google-services.json" target="app/google-services.json" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="phonegap-version" value="cli-8.0.0" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="false" />
+    <preference name="android-minSdkVersion" value="19" />
+</widget>

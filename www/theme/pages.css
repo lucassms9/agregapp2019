@@ -1,0 +1,2743 @@
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('../google-fonts/roboto-slab/RobotoSlab-Regular.ttf') format('truetype');
+}
+
+body {
+  font-family: roboto !important;
+}
+
+.foto-perfil {
+  margin-bottom: 10px;
+  border: 2px solid #4a90e2;
+  border-radius: 100%;
+  height: 95px;
+  width: 95px;
+  margin-top: 15px;
+}
+
+.user-info {
+  text-align: center;
+}
+
+.sobreamento-menu {
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.sobreamento-menu2 {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.page[data-page="ofertas"] .maisOfertas-on {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+  margin: 15px;
+}
+
+.page[data-page="minha_agenda"] .truck-trigre,
+.page[data-page="minha_agenda"] .truck-bombril,
+.page[data-page="minha_agenda"] .caminhao-tigre,
+.page[data-page="minha_agenda"] .caminhao-bombril,
+.page[data-page="ofertas_filtro"] .truck-trigre,
+.page[data-page="ofertas_filtro"] .truck-bombril,
+.page[data-page="ofertas_filtro"] .caminhao-tigre,
+.page[data-page="ofertas_filtro"] .caminhao-bombril,
+.page[data-page="lances"] .truck-trigre,
+.page[data-page="lances"] .truck-bombril,
+.page[data-page="lances"] .caminhao-tigre,
+.page[data-page="lances"] .caminhao-bombril,
+.page[data-page="oferta_detalhes"] .truck-trigre,
+.page[data-page="oferta_detalhes"] .truck-bombril,
+.page[data-page="oferta_detalhes"] .caminhao-tigre,
+.page[data-page="oferta_detalhes"] .caminhao-bombril,
+.page[data-page="agenda_detalhe"] .truck-trigre,
+.page[data-page="agenda_detalhe"] .truck-bombril,
+.page[data-page="agenda_detalhe"] .caminhao-tigre,
+.page[data-page="agenda_detalhe"] .caminhao-bombril,
+.page[data-page="tipo_oferta"] .truck-trigre,
+.page[data-page="tipo_oferta"] .truck-bombril,
+.page[data-page="tipo_oferta"] .caminhao-tigre,
+.page[data-page="tipo_oferta"] .caminhao-bombril,
+.page[data-page="ofertas"] .truck-trigre,
+.page[data-page="ofertas"] .truck-bombril,
+.page[data-page="ofertas"] .caminhao-tigre,
+.page[data-page="ofertas"] .caminhao-bombril {
+  display: none;
+}
+
+.page[data-page="minha_agenda"] .titulo,
+.page[data-page="ofertas"] .titulo,
+.page[data-page="ofertas_filtro"] .titulo {
+  margin-top: -10px;
+  /*border-bottom: solid 1px #d2d2d2;*/
+  border-top: solid 1px #d2d2d2;
+  padding-left: 0 !important;
+  background-color: #f3f3f3;
+}
+
+.page[data-page="minha_agenda"] #teste4,
+.page[data-page="ofertas_filtro"] #teste4,
+.page[data-page="ofertas"] #teste3 {
+  margin-top: 5px;
+}
+
+.page[data-page="agenda_detalhe"] #resposta-bo {
+  display: none;
+}
+
+.page[data-page=agenda_detalhe] .chegada-destino-ok,
+
+.page[data-page=agenda_detalhe] .devolucao-ok,
+/*.page[data-page=minha_agenda] #chegada-destino-clock,*/
+/*.page[data-page=minha_agenda] #liberado-viagem-clock,*/
+.page[data-page=agenda_detalhe] .liberado-viagem-ok,
+/*.page[data-page=minha_agenda] #chegada-origem-clock,*/
+/*.page[data-page=minha_agenda] .ocorrencia,*/
+.page[data-page=agenda_detalhe] .chegada-origem-ok,
+/*.page[data-page=minha_agenda] #contratacao-clock,*/
+.page[data-page=agenda_detalhe] .contratacao-ok {
+  display: none;
+}
+
+.page[data-page="opcoes"] input #passReal,
+.page[data-page="cadastro"] input #passReal {
+  width: 1px;
+  height: 55px;
+}
+
+.page[data-page="opcoes"] input #pass,
+.page[data-page="cadastro"] input #pass {
+  position: absolute;
+  left: 0px;
+}
+
+.infinite-scroll-preloader {
+  margin-top: -20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.infinite-scroll-preloader .preloader {
+  width: 34px;
+  height: 34px;
+}
+
+.list-block {
+  margin-top: 0;
+}
+
+i.icon.icon-back {
+  background-image: url(../assets/img/voltar-esquerda.png) !important;
+  width: 30px;
+  height: 44px;
+}
+
+.theme-teal a {
+  color: #000;
+}
+
+.page[data-page="filtro"] .theme-teal .toolbar {
+  background-color: #fff !important;
+}
+
+.page[data-page="tipo_oferta"] .list-block {
+  margin: 0;
+}
+
+.page[data-page="agenda_detalhe"] .list-block,
+.page[data-page="oferta_detalhes"] .list-block,
+.page[data-page="lances"] .list-block {
+  margin: 0;
+}
+
+.page[data-page="filtro"] .list-block input[type="text"] {
+  margin-top: 0px;
+  margin-left: 22px !important;
+}
+
+
+.page[data-page="opcoes"] .card-content-inner,
+.page[data-page="filtro"] .card-content-inner {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.page[data-page="ofertas_filtro"] img.status,
+.page[data-page="minha_agenda"] img.status,
+.page[data-page="ofertas"] img.status {
+  width: 10px;
+  position: relative;
+  left: 11px;
+}
+
+.page[data-page="minha_agenda"] img.dollar,
+.page[data-page="ofertas_filtro"] img.dollar,
+.page[data-page="ofertas"] img.dollar {
+  display: none;
+  /*width: 6px;*/
+  width: 12px;
+  position: relative;
+  left: 3%;
+  top: 80%;
+}
+
+.page[data-page="minhas_ofertas"] img.dollar {
+  display: none;
+  /*width: 6px;*/
+  width: 12px;
+  position: relative;
+  left: 5px;
+  margin-top: 3px;
+}
+
+.page[data-page="minhas_ofertas"] img.cifra {
+  display: none;
+  /*width: 12px;*/
+  width: 14px;
+  position: relative;
+  left: 4%;
+  margin-top: 2px;
+}
+
+.page[data-page="ofertas_filtro"] img.cifra,
+.page[data-page="minha_agenda"] img.cifra,
+.page[data-page="ofertas"] img.cifra {
+  display: none;
+  /*width: 12px;*/
+  width: 14px;
+  position: relative;
+  left: 3%;
+  top: 88%;
+}
+
+.page[data-page="cadastro-2"] .list-block .item-inner:after {
+  content: none;
+}
+
+.page[data-page="cadastro-2"] .opcao-titulo,
+.page[data-page="opcoes"] .opcao-titulo,
+.page[data-page="filtro"] .opcao-titulo {
+  white-space: initial !important;
+}
+
+.page[data-page="minhas_ofertas"] .list-block .item-content {
+  padding-left: 0px !important;
+}
+
+.page[data-page="walkthrough"] .theme-teal a {
+  color: #000 !important;
+}
+
+.page[data-page="minha_agenda"] .linha2,
+.page[data-page="minha_agenda"] .linha1 {
+  width: 100%;
+  font-size: 13px;
+}
+
+.page[data-page="minha_agenda"] .destino,
+.page[data-page="minhas_ofertas"] .destino {
+  position: relative;
+
+  right: -5px;
+}
+
+.page[data-page="minhas_ofertas"] .font {
+  font-size: 14px;
+}
+
+.page[data-page="minhas_ofertas"] .list-block .item-title {
+  padding-left: 15px !important;
+}
+
+.page[data-page="minhas_ofertas"] .posicao {
+  position: relative;
+  top: -1px;
+  font-weight: bold;
+}
+
+.page[data-page="minhas_ofertas"] .trata-font {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.page[data-page="minhas_ofertas"] img.status {
+  position: absolute;
+  left: 82%;
+  top: 28px;
+  width: 13px;
+}
+
+.page[data-page="minhas_ofertas"] #list_ofertas {
+  font-size: 14px;
+}
+
+.page[data-page="minhas_ofertas"] .center1 {
+  position: absolute;
+  top: 21px;
+  left: 33%;
+}
+
+.page[data-page="minha_agenda"] img.indica,
+.page[data-page="minhas_ofertas"] img.indica {
+  position: relative;
+  top: 3px;
+}
+
+.page[data-page="agenda_detalhe"] .item-inner {
+  display: block !important;
+}
+
+.page[data-page="minha_agenda"] .lista1 .item-title {
+  /*height: 100px !important;*/
+  /*max-width: 0 !important;*/
+  width: 100% !important;
+}
+
+.page[data-page="minha_agenda"] .lista1 {
+  margin-top: 0;
+}
+
+.page[data-page="minha_agenda"] .origem,
+.page[data-page="minhas_ofertas"] .origem {
+  position: relative;
+
+  left: -5px;
+}
+
+.page[data-page="minhas_ofertas"] .list-block .item-inner {
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+}
+
+.page[data-page="opcoes"] .margin-opcoes,
+.page[data-page="filtro"] .margin-opcoes {
+  margin-bottom: 20px;
+}
+
+.page[data-page="filtro"] .button-win,
+.page[data-page="opcoes"] .button-win {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 15px;
+  margin-top: 25px;
+  background-color: #fff !important;
+  color: #14ae4e !important;
+  width: 240px;
+  border: 1px solid #14ae4e;
+  border-radius: 100px !important;
+
+  height: 40px;
+  line-height: 40px;
+}
+
+.page[data-page="opcoes"] .button-salvar,
+.page[data-page="filtro"] .button-salvar {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 15px;
+  margin-bottom: 15px;
+  background-color: #fff !important;
+  color: #14ae4e !important;
+  width: 140px;
+  border: 1px solid #14ae4e;
+  border-radius: 100px !important;
+
+  height: 40px;
+  line-height: 40px;
+}
+
+.page[data-page="filtro"] .button-limpar,
+.page[data-page="opcoes"] .button-limpar {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 15px;
+  margin-top: 25px;
+  background-color: #fff !important;
+  color: #dc9f4c !important;
+  width: 140px;
+  border: 1px solid #dc9f4c;
+  border-radius: 100px !important;
+
+  height: 40px;
+  line-height: 40px;
+}
+
+.page[data-page="minhas_ofertas"] .button-atualizar {
+  font-size: 15px;
+  margin-top: -20px;
+  background-color: #fff !important;
+  color: #14ae4e !important;
+  width: 95%;
+  border: 1px solid #14ae4e;
+  border-radius: 100px !important;
+
+  height: 35px;
+  line-height: 35px;
+}
+
+.page[data-page="opcoes"] .alterarfoto {
+  position: absolute;
+  left: 33%;
+  background-color: #fff !important;
+  color: #7ed321 !important;
+  /*width: 146% !important;*/
+  border: 1px solid #7ed321;
+  border-radius: 100px !important;
+  padding: 4px;
+  margin-top: -8px;
+}
+
+.page[data-page="minha_agenda"] .button-filtro-favoritos {
+  font-size: 15px;
+  margin-top: -20px;
+  background-color: #fff !important;
+  color: #bdc347 !important;
+  width: 146%;
+  border: 1px solid #bdc347;
+  border-radius: 100px !important;
+  margin-left: 15%;
+  height: 35px;
+  line-height: 35px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+.page[data-page="ofertas"] .button-filtro-favoritos,
+.page[data-page="ofertas_filtro"] .button-filtro-favoritos {
+  font-size: 15px;
+  margin-top: -20px;
+  background-color: #fff !important;
+  color: #bdc347 !important;
+  width: 146%;
+  border: 1px solid #bdc347;
+  border-radius: 100px !important;
+  margin-left: 15%;
+  height: 35px;
+  line-height: 35px;
+}
+
+.page[data-page="ofertas"] .button-filtro,
+.page[data-page="minha_agenda"] .button-filtro,
+.page[data-page="ofertas_filtro"] .button-filtro {
+  font-size: 15px;
+  margin-top: -20px;
+  background-color: #fff !important;
+  color: #14ae4e !important;
+  width: 87%;
+  border: 1px solid #14ae4e;
+  border-radius: 100px !important;
+
+  height: 35px;
+  line-height: 35px;
+}
+
+.page[data-page="agenda_detalhe"] .button-finalizacao,
+.page[data-page="minha_agenda"] .button-finalizacao {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 15px;
+  /*margin-top: 25px;*/
+  /*background-color:#fff !important ;*/
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3) !important;
+  width: 95%;
+  border: 1px solid;
+  border-radius: 100px !important;
+
+  height: 48px;
+  line-height: 48px;
+}
+
+.page[data-page="agenda_detalhe"] .button-descarga,
+.page[data-page="minha_agenda"] .button-descarga {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 15px;
+  /*margin-top: 25px;*/
+  /*background-color:#fff !important ;*/
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3) !important;
+  width: 95%;
+  border: 1px solid;
+  border-radius: 100px !important;
+
+  height: 48px;
+  line-height: 48px;
+}
+
+.page[data-page="agenda_detalhe"] .button-chegada,
+.page[data-page="minha_agenda"] .button-chegada {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 15px;
+  /*margin-top: 25px;*/
+  /*background-color:#fff !important ;*/
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3) !important;
+  width: 95%;
+  border: 1px solid;
+  border-radius: 100px !important;
+
+  height: 48px;
+  line-height: 48px;
+}
+
+.page[data-page="agenda_detalhe"] .button-win,
+.page[data-page="minha_agenda"] .button-win {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 15px;
+  margin-top: 15px;
+  background-color: #fff !important;
+  color: #14ae4e !important;
+  width: 95%;
+  margin-bottom: 10px;
+  border: 1px solid #14ae4e;
+  border-radius: 100px !important;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3) !important;
+  height: 48px;
+  line-height: 48px;
+}
+
+.page[data-page="chegada_origem"] .button-win1,
+.page[data-page="vencedor"] .button-win1 {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 15px;
+  /*margin-top: 15px;*/
+  background-color: #fff !important;
+  color: #2196f3 !important;
+  width: 90%;
+  margin-bottom: 10px;
+  border: 1px solid #2196f3;
+  border-radius: 100px !important;
+  height: 48px;
+  line-height: 48px;
+}
+
+.page[data-page="vencedor"] .button-win {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 15px;
+  margin-top: 25px;
+  background-color: #fff !important;
+  color: #14ae4e !important;
+  width: 90%;
+  border: 1px solid #14ae4e;
+  border-radius: 100px !important;
+
+  height: 48px;
+  line-height: 48px;
+}
+
+.page[data-page="vencedor"] .contente-text {
+  text-align: center;
+}
+
+.page[data-page="perdedor_Oferta"] .cabecalho,
+.page[data-page="perdedor"] .cabecalho {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page[data-page="vencedor"] .text-win,
+.page[data-page="perdedor_Oferta"] .info-bid,
+.page[data-page="perdedor"] .info-bid,
+.page[data-page="informa_atraso"] .segundoCard,
+.page[data-page="finalizacao_descarga_final"] .segundoCard,
+.page[data-page="devolucao_parcial_final"] .segundoCard,
+.page[data-page="devolucao_parcial_final"] .segundoCard,
+.page[data-page="devolucao_total_final"] .segundoCard,
+.page[data-page="resultado_devolucao"] .segundoCard,
+.page[data-page="resultado_devolucao"] .segundoCard,
+.page[data-page="problema_caminhao_final"] .segundoCard,
+.page[data-page="chegada_origem"] .segundoCard,
+.page[data-page="apresentacao_descarga_final"] .segundoCard,
+.page[data-page="apresentacao_descarga_final_viagens"] .segundoCard,
+.page[data-page="problema_estrada_final"] .segundoCard,
+.page[data-page="informa_atraso_final"] .segundoCard,
+.page[data-page="devolucao_total"] .segundoCard,
+.page[data-page="devolucao_parcial"] .segundoCard,
+.page[data-page="finalizacao_descarga"] .segundoCard,
+.page[data-page="problema_caminhao"] .segundoCard,
+.page[data-page="problema_estrada"] .segundoCard,
+.page[data-page="ocorrencia"] .segundoCard,
+.page[data-page="entregas_home"] .segundoCard,
+.page[data-page="devolucao_home"] .segundoCard,
+.page[data-page="filtro"] .segundoCard,
+.page[data-page="opcoes"] .segundoCard,
+.page[data-page="lances"] .segundoCard,
+.page[data-page="tipo_oferta"] .segundoCard,
+.page[data-page="minhas_ofertas"] .segundoCard,
+.page[data-page="minha_agenda"] .segundoCard,
+.page[data-page="agenda_detalhe"] .segundoCard,
+.page[data-page="oferta_detalhes"] .segundoCard {
+  background-color: #f3f3f3;
+}
+
+.page[data-page="lances"] .ponto-inicial,
+.page[data-page="tipo_oferta"] .ponto-inicial,
+.page[data-page="minhas_ofertas"] .ponto-inicial,
+.page[data-page="agenda_detalhe"] .ponto-inicial,
+.page[data-page="oferta_detalhes"] .ponto-inicial,
+.page[data-page="minha_agenda"] .ponto-inicial,
+.page[data-page="ofertas_filtro"] .ponto-inicial,
+.page[data-page="ofertas"] .ponto-inicial {
+  position: relative;
+  top: 12px;
+}
+
+.page[data-page="lances"] .text-uf-inicial,
+.page[data-page="tipo_oferta"] .text-uf-inicial,
+.page[data-page="minhas_ofertas"] .text-uf-inicial,
+.page[data-page="oferta_detalhes"] .text-uf-inicial,
+.page[data-page="agenda_detalhe"] .text-uf-inicial,
+.page[data-page="ofertas_filtro"] .text-uf-inicial,
+.page[data-page="minha_agenda"] .text-uf-inicial,
+.page[data-page="ofertas"] .text-uf-inicial {
+  position: absolute;
+  left: 40%;
+  top: 12%;
+}
+
+.page[data-page="lances"] .text-uf-inicial-truck,
+.page[data-page="tipo_oferta"] .text-uf-inicial-truck,
+.page[data-page="minhas_ofertas"] .text-uf-inicial-truck,
+.page[data-page="ofertas_filtro"] .text-uf-inicial-truck,
+.page[data-page="oferta_detalhes"] .text-uf-inicial-truck,
+.page[data-page="agenda_detalhe"] .text-uf-inicial-truck,
+.page[data-page="minha_agenda"] .text-uf-inicial-truck,
+.page[data-page="ofertas"] .text-uf-inicial-truck {
+  position: absolute;
+  left: 30%;
+  margin-top: 1%;
+}
+
+.page[data-page="lances"] .fluxo,
+.page[data-page="tipo_oferta"] .fluxo,
+.page[data-page="minhas_ofertas"] .fluxo,
+.page[data-page="ofertas_filtro"] .fluxo,
+.page[data-page="oferta_detalhes"] .fluxo,
+.page[data-page="agenda_detalhe"] .fluxo,
+.page[data-page="minha_agenda"] .fluxo,
+.page[data-page="ofertas"] .fluxo {
+  text-align: left;
+  position: relative;
+  left: 25%;
+  font-size: 13px;
+  margin-top: 25px;
+}
+
+.page[data-page="lances"] img.ic-satelite,
+.page[data-page="tipo_oferta"] img.ic-satelite,
+.page[data-page="minhas_ofertas"] img.ic-satelite,
+.page[data-page="ofertas_filtro"] img.ic-satelite,
+.page[data-page="minha_agenda"] img.ic-satelite,
+.page[data-page="oferta_detalhes"] img.ic-satelite,
+.page[data-page="agenda_detalhe"] img.ic-satelite,
+.page[data-page="ofertas"] img.ic-satelite {
+  top: -23px;
+  position: absolute;
+  left: 22%;
+  /*display: none;*/
+  width: 26%;
+}
+
+.page[data-page="lances"] img.truck,
+.page[data-page="tipo_oferta"] img.truck,
+.page[data-page="minhas_ofertas"] img.truck,
+.page[data-page="ofertas_filtro"] img.truck,
+.page[data-page="minha_agenda"] img.truck,
+.page[data-page="oferta_detalhes"] img.truck,
+.page[data-page="agenda_detalhe"] img.truck,
+.page[data-page="lances"] img.truck-bombril,
+.page[data-page="lances"] img.truck-trigre,
+.page[data-page="oferta_detalhes"] img.truck-bombril,
+.page[data-page="oferta_detalhes"] img.truck-trigre,
+.page[data-page="agenda_detalhe"] img.truck-bombril,
+.page[data-page="agenda_detalhe"] img.truck-trigre,
+.page[data-page="tipo_oferta"] img.truck-bombril,
+.page[data-page="tipo_oferta"] img.truck-trigre,
+.page[data-page="ofertas_filtro"] img.truck-bombril,
+.page[data-page="ofertas_filtro"] img.truck-trigre,
+.page[data-page="minha_agenda"] img.truck-bombril,
+.page[data-page="minha_agenda"] img.truck-trigre,
+.page[data-page="ofertas"] img.truck-trigre,
+.page[data-page="ofertas"] img.truck-bombril,
+.page[data-page="ofertas"] img.truck {
+  position: absolute;
+  top: -5px;
+  width: 116%;
+}
+
+.page[data-page="lances"] .caminhao-inicial,
+.page[data-page="tipo_oferta"] .caminhao-inicial,
+.page[data-page="minhas_ofertas"] .caminhao-inicial,
+.page[data-page="ofertas_filtro"] .caminhao-inicial,
+.page[data-page="minha_agenda"] .caminhao-inicial,
+.page[data-page="oferta_detalhes"] .caminhao-inicial,
+.page[data-page="agenda_detalhe"] .caminhao-inicial,
+.page[data-page="ofertas"] .caminhao-inicial {
+  /*display: none;*/
+}
+
+.page[data-page="lances"] .truck-inicial,
+.page[data-page="minhas_ofertas"] .truck-inicial,
+.page[data-page="oferta_detalhes"] .truck-inicial,
+.page[data-page="agenda_detalhe"] .truck-inicial,
+.page[data-page="ofertas_filtro"] .truck-inicial,
+.page[data-page="minha_agenda"] .truck-inicial,
+.page[data-page="tipo_oferta"] .truck-inicial,
+.page[data-page="ofertas"] .truck-inicial {
+  /*display: none;*/
+}
+
+.page[data-page="lances"] .sateliteimg,
+.page[data-page="tipo_oferta"] .sateliteimg,
+.page[data-page="minhas_ofertas"] .sateliteimg,
+.page[data-page="ofertas_filtro"] .sateliteimg,
+.page[data-page="minha_agenda"] .sateliteimg,
+.page[data-page="oferta_detalhes"] .sateliteimg,
+.page[data-page="agenda_detalhe"] .sateliteimg,
+.page[data-page="ofertas"] .sateliteimg {
+  display: none;
+}
+
+.page[data-page="lances"] .card a,
+.page[data-page="opcoes"] .card a,
+.page[data-page="filtro"] .card a,
+.page[data-page="tipo_oferta"] .card a,
+.page[data-page="minhas_ofertas"] .card a,
+.page[data-page="ofertas_filtro"] .card a,
+.page[data-page="minha_agenda"] .card a,
+.page[data-page="oferta_detalhes"] .card a,
+.page[data-page="agenda_detalhe"] .card a,
+.page[data-page="ofertas"] .card a {
+  color: #000;
+}
+
+.page[data-page="minhas_ofertas"] .ponto-final,
+.page[data-page="oferta_detalhes"] .ponto-final,
+.page[data-page="agenda_detalhe"] .ponto-final,
+.page[data-page="tipo_oferta"] .ponto-final,
+.page[data-page="ofertas_filtro"] .ponto-final,
+.page[data-page="minha_agenda"] .ponto-final,
+.page[data-page="lances"] .ponto-final,
+.page[data-page="ofertas"] .ponto-final {
+  position: relative;
+  top: -5px;
+  padding-left: 23%;
+}
+
+.page[data-page="minhas_ofertas"] img.horas,
+.page[data-page="oferta_detalhes"] img.horas,
+.page[data-page="agenda_detalhe"] img.horas,
+.page[data-page="tipo_oferta"] img.horas,
+.page[data-page="ofertas_filtro"] img.horas,
+.page[data-page="minha_agenda"] img.horas,
+.page[data-page="lances"] img.horas,
+.page[data-page="ofertas"] img.horas {
+  position: absolute;
+  left: 73%;
+  top: -3px;
+  width: 25%;
+  display: none;
+}
+
+.page[data-page="tipo_oferta"] .text-uf-final,
+.page[data-page="minhas_ofertas"] .text-uf-final,
+.page[data-page="oferta_detalhes"] .text-uf-final,
+.page[data-page="agenda_detalhe"] .text-uf-final,
+.page[data-page="ofertas_filtro"] .text-uf-final,
+.page[data-page="minha_agenda"] .text-uf-final,
+.page[data-page="lances"] .text-uf-final,
+.page[data-page="ofertas"] .text-uf-final {
+  position: absolute;
+  top: 50%;
+  margin: 0px;
+  left: 52%;
+}
+
+.page[data-page="lances"] .center1,
+.page[data-page="tipo_oferta"] .center1,
+.page[data-page="minhas_ofertas"] .center1,
+.page[data-page="ofertas_filtro"] .center1,
+.page[data-page="minha_agenda"] .center1,
+.page[data-page="agenda_detalhe"] .center1,
+.page[data-page="oferta_detalhes"] .center1,
+.page[data-page="ofertas"] .center1 {
+  width: 100px;
+}
+
+.page[data-page="ofertas"] .infinite-scroll-preloader {
+  margin-top: -20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.page[data-page="ofertas"] .infinite-scroll-preloader .preloader {
+  width: 34px;
+  height: 34px;
+}
+
+.page[data-page="dashboard"] .row {
+  margin-top: 18px !important;
+}
+
+.page[data-page="dashboard"] .content-block {
+  margin: 10px 0 !important;
+}
+
+@media screen and (max-width: 350px) {
+  .page[data-page="dashboard"] .add-notifica1 {
+    margin-top: -8% !important;
+  }
+
+  .page[data-page="dashboard"] .add-notifica {
+    margin-top: 5% !important;
+  }
+}
+
+.page[data-page="dashboard"] .diminui-padding {
+  padding-top: 20px !important;
+}
+
+.page[data-page="dashboard"] .navbar-inner {
+  height: 160%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.09);
+}
+
+.page[data-page="dashboard"] .page-content {
+  position: relative;
+  top: 60px;
+}
+
+.page[data-page="dashboard"] .left {
+  position: relative;
+  margin-left: 15px;
+}
+
+.page[data-page="dashboard"] .bemvindo {
+  position: absolute;
+  top: 130px;
+  left: 10%;
+  font-size: 15px;
+}
+
+.page[data-page="chegada_origem"] .quadrado,
+.page[data-page="vencedor"] .quadrado,
+.page[data-page="agenda_detalhe"] p.quadradop,
+.page[data-page="finalizacao_descarga_final"] p.quadradop,
+.page[data-page="devolucao_parcial_final"] p.quadradop,
+.page[data-page="devolucao_total_final"] p.quadradop,
+.page[data-page="resultado_devolucao"] p.quadradop,
+.page[data-page="problema_caminhao"] p.quadradop,
+.page[data-page="problema_caminhao_final"] p.quadradop,
+.page[data-page="ocorrencia"] p.quadradop,
+.page[data-page="devolucao_home"] p.quadradop,
+.page[data-page="entregas_home"] p.quadradop {
+  text-align: center;
+  font-size: 16px;
+}
+
+.page[data-page="dashboard"] p.quadradop {
+  text-align: right;
+  position: relative;
+  right: 4%;
+  margin-top: 30%;
+  top: 6px;
+  font-size: 16px;
+}
+
+.page[data-page="agenda_detalhe"] p.quadrado2p-entrega,
+.page[data-page="entregas_home"] p.quadrado2p-entrega {
+  text-align: center;
+  font-size: 16px;
+}
+
+.page[data-page="agenda_detalhe"] p.quadrado2p,
+.page[data-page="devolucao_total"] p.quadrado2p,
+.page[data-page="devolucao_parcial"] p.quadrado2p,
+.page[data-page="finalizacao_descarga_final"] p.quadrado2p,
+.page[data-page="devolucao_total_final"] p.quadrado2p,
+.page[data-page="resultado_devolucao"] p.quadrado2p,
+.page[data-page="devolucao_parcial_final"] p.quadrado2p,
+.page[data-page="problema_caminhao"] p.quadrado2p,
+.page[data-page="problema_caminhao_final"] p.quadrado2p,
+.page[data-page="ocorrencia"] p.quadrado2p,
+.page[data-page="devolucao_home"] p.quadrado2p,
+.page[data-page="entregas_home"] p.quadrado2p {
+  margin-top: 26%;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.page[data-page="dashboard"] p.quadrado2p {
+  position: relative;
+  margin-top: 30%;
+  text-align: right;
+  right: 4%;
+  top: 6px;
+  font-size: 16px;
+}
+
+
+.page[data-page="dashboard"] p.quadrado3p {
+  text-align: right;
+  position: relative;
+  right: 4%;
+  margin-top: 30%;
+  top: 6px;
+  font-size: 16px;
+}
+
+.page[data-page="dashboard"] p.quadrado5p {
+  text-align: right;
+  position: relative;
+  right: 4%;
+  margin-top: 30%;
+  top: 6px;
+  font-size: 16px;
+}
+
+.page[data-page="dashboard"] .quadrado-verde {
+  width: 97%;
+  border: 1px solid #7ed321;
+  border-radius: 19px;
+  background-color: rgba(255, 255, 255, 0.61);
+  box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.page[data-page="dashboard"] .quadrado3 {
+  width: 97%;
+  border: 1px solid #dc9f4c;
+  border-radius: 19px;
+  background-color: rgba(255, 255, 255, 0.61);
+  box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.page[data-page="dashboard"] .mini-quadrado3 {
+  height: 27px;
+  width: 33px;
+  background-color: #dc9f4c;
+  box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.05);
+  top: -2px;
+  position: relative;
+  left: -7px;
+}
+
+.page[data-page="problema_caminhao"] .quadrado,
+.page[data-page="ocorrencia"] .quadrado,
+.page[data-page="entregas_home"] .quadrado,
+.page[data-page="devolucao_home"] .quadrado {
+  width: 97%;
+  border: 1px solid #7ed321;
+  border-radius: 19px;
+  background-color: rgba(255, 255, 255, 0.61);
+  box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.page[data-page="dashboard"] .quadrado {
+  width: 97%;
+  border: 1px solid #7ed321;
+  border-radius: 19px;
+  background-color: rgba(255, 255, 255, 0.61);
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.page[data-page="dashboard"] .mini-quadrado-notifica-ofertas,
+.page[data-page="dashboard"] .mini-quadrado-notifica-viagens,
+.page[data-page="dashboard"] .mini-quadrado-notifica {
+  display: none;
+  position: relative;
+  left: 46%;
+  top: -35px;
+
+  border-radius: 50%;
+  /*display: inline-block;*/
+  height: 30px;
+  width: 30px;
+  /*border: 1px solid #000000;*/
+  background-color: #ff0000;
+}
+
+.page[data-page="problema_caminhao"] .mini-quadrado,
+.page[data-page="ocorrencia"] .mini-quadrado,
+.page[data-page="entregas_home"] .mini-quadrado,
+.page[data-page="devolucao_home"] .mini-quadrado,
+.page[data-page="dashboard"] .mini-quadrado {
+  height: 27px;
+  width: 33px;
+  background-color: #7ed321;
+  box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.05);
+  top: -2px;
+  position: relative;
+  left: -7px;
+}
+
+.page[data-page="agenda_detalhe"] .quadrado2,
+.page[data-page="devolucao_home"] .quadrado2,
+.page[data-page="entregas_home"] .quadrado2 {
+  width: 74%;
+  border: 1px solid #4a90e2;
+  border-radius: 19px;
+  background-color: rgba(255, 255, 255, 0.61);
+  box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.05);
+  height: 100px;
+}
+
+.page[data-page="ocorrencia"] .quadrado2,
+.page[data-page="problema_caminhao"] .quadrado2 {
+  width: 190%;
+  border: 1px solid #4a90e2;
+  border-radius: 19px;
+  background-color: rgba(255, 255, 255, 0.61);
+  box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.page[data-page="dashboard"] .quadrado2 {
+  width: 97%;
+  border: 1px solid #4a90e2;
+  border-radius: 19px;
+  background-color: rgba(255, 255, 255, 0.61);
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.page[data-page="problema_caminhao"] p.quadrado2p,
+.page[data-page="ocorrencia"] p.quadrado2p {
+  position: relative;
+  margin-top: 15%;
+  text-align: center;
+  top: 6px;
+  font-size: 16px;
+}
+
+.page[data-page="devolucao_home"] p.quadrado2p,
+.page[data-page="entregas_home"] p.quadrado2p {
+  position: relative;
+  margin-top: 15%;
+  text-align: center;
+  font-size: 16px;
+}
+
+.page[data-page="dashboard"] p.quadrado5p {
+  text-align: right;
+  position: relative;
+  right: 4%;
+  margin-top: 30%;
+  top: 6px;
+  font-size: 16px;
+}
+
+.page[data-page="dashboard"] .quadrado-verde {
+  width: 97%;
+  border: 1px solid #7ed321;
+  border-radius: 19px;
+  background-color: rgba(255, 255, 255, 0.61);
+  box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.page[data-page="dashboard"] .quadrado3 {
+  width: 97%;
+  border: 1px solid #dc9f4c;
+  border-radius: 19px;
+  background-color: rgba(255, 255, 255, 0.61);
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.page[data-page="dashboard"] .mini-quadrado3 {
+  height: 27px;
+  width: 33px;
+  background-color: #dc9f4c;
+  box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.05);
+  top: -2px;
+  position: relative;
+  left: -7px;
+}
+
+.page[data-page="chegada_origem"] .quadrado,
+.page[data-page="vencedor"] .quadrado,
+.page[data-page="agenda_detalhe"] .quadrado,
+.page[data-page="devolucao_home"] .quadrado,
+.page[data-page="entregas_home"] .quadrado {
+  width: 74%;
+  border: 1px solid #7ed321;
+  border-radius: 19px;
+  background-color: rgba(255, 255, 255, 0.61);
+  box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.page[data-page="problema_caminhao"] .quadrado,
+.page[data-page="ocorrencia"] .quadrado {
+  /*.page[data-page=dashboard] .quadrado{*/
+
+  width: 130%;
+  border: 1px solid #7ed321;
+  border-radius: 19px;
+  background-color: rgba(255, 255, 255, 0.61);
+  box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.page[data-page="problema_caminhao"] .mini-quadrado,
+.page[data-page="ocorrencia"] .mini-quadrado,
+.page[data-page="entregas_home"] .mini-quadrado,
+.page[data-page="devolucao_home"] .mini-quadrado,
+.page[data-page="dashboard"] .mini-quadrado {
+  height: 27px;
+  width: 33px;
+  background-color: #7ed321;
+  box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.05);
+  top: -2px;
+  position: relative;
+  left: -7px;
+}
+
+.page[data-page="problema_caminhao"] .quadrado2,
+.page[data-page="ocorrencia"] .quadrado2 {
+  width: 280%;
+  border: 1px solid #4a90e2;
+  border-radius: 19px;
+  background-color: rgba(255, 255, 255, 0.61);
+  box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.page[data-page="entregas_home"] .quadrado2,
+.page[data-page="devolucao_home"] .quadrado2,
+.page[data-page="dashboard"] .quadrado2 {}
+
+.page[data-page="problema_caminhao"] .mini-quadrado2,
+.page[data-page="ocorrencia"] .mini-quadrado2,
+.page[data-page="entregas_home"] .mini-quadrado2,
+.page[data-page="devolucao_home"] .mini-quadrado2,
+.page[data-page="dashboard"] .mini-quadrado2 {
+  height: 27px;
+  width: 33px;
+  background-color: #4a90e2;
+  box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.05);
+  top: -2px;
+  position: relative;
+  left: -7px;
+}
+
+.page[data-page="dashboard"] .quadrado4 {
+  width: 97%;
+  border: 1px solid #bdc347;
+  border-radius: 19px;
+  background-color: rgba(255, 255, 255, 0.61);
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.page[data-page="dashboard"] .mini-quadrado4 {
+  height: 27px;
+  width: 33px;
+  background-color: #bdc347;
+  box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.05);
+  top: -2px;
+  position: relative;
+  left: -7px;
+}
+
+.page[data-page="dashboard"] p.quadrado4p {
+  position: relative;
+  margin-top: 18%;
+  text-align: right;
+  right: 4%;
+  top: 6px;
+  font-size: 16px;
+}
+
+.page[data-page="dashboard"] .quadrado5 {
+  width: 97%;
+  border: 1px solid #f6ca14;
+  border-radius: 19px;
+  background-color: rgba(255, 255, 255, 0.61);
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.page[data-page="dashboard"] .mini-quadrado5 {
+  height: 27px;
+  width: 33px;
+  background-color: #f6ca14;
+  box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.05);
+  top: -2px;
+  position: relative;
+  left: -7px;
+}
+
+.page[data-page="dashboard"] .quadrado6 {
+  width: 97%;
+  border: 1px solid #9b9b9b;
+  border-radius: 19px;
+  background-color: rgba(255, 255, 255, 0.61);
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.page[data-page="dashboard"] .mini-quadrado6 {
+  height: 27px;
+  width: 33px;
+  background-color: #9b9b9b;
+  box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.05);
+  top: -2px;
+  position: relative;
+  left: -7px;
+}
+
+.page[data-page="dashboard"] p.quadrado6p {
+  position: relative;
+  margin-top: 30%;
+  text-align: right;
+  right: 4%;
+  top: 6px;
+  font-size: 16px;
+}
+
+.page[data-page="esqueci_senha"] .list-block,
+.page[data-page="esqueci_senha"] .input-item,
+.page[data-page="esqueci_senha"] .item-inner,
+.page[data-page="esqueci_senha"] .list-block,
+.page[data-page="esqueci_senha"] .list-block,
+.page[data-page="esqueci_senha"] .inputs-list,
+.page[data-page="esqueci_senha"] .item-inner {
+  display: block;
+  margin-bottom: 8px;
+  padding-bottom: 0;
+  margin-left: -6px;
+  font-size: 15px;
+}
+
+.page[data-page="login"] .list-block,
+.page[data-page="login"] .input-item,
+.page[data-page="login"] .item-inner,
+.page[data-page="login"] .list-block,
+.page[data-page="login"] .inputs-list,
+.page[data-page="login"] .item-inner,
+.page[data-page="problema_caminhao"] .list-block,
+.page[data-page="problema_caminhao"] .input-item,
+.page[data-page="problema_caminhao"] .item-inner,
+.page[data-page="problema_caminhao"] .list-block,
+.page[data-page="problema_caminhao"] .inputs-list,
+.page[data-page="problema_caminhao"] .item-inner,
+.page[data-page="finalizacao_descarga"] .list-block,
+.page[data-page="finalizacao_descarga"] .input-item,
+.page[data-page="finalizacao_descarga"] .item-inner,
+.page[data-page="finalizacao_descarga"] .list-block,
+.page[data-page="finalizacao_descarga"] .inputs-list,
+.page[data-page="finalizacao_descarga"] .item-inner,
+.page[data-page="devolucao_total"] .list-block,
+.page[data-page="devolucao_total"] .input-item,
+.page[data-page="devolucao_total"] .item-inner,
+.page[data-page="devolucao_total"] .list-block,
+.page[data-page="devolucao_total"] .inputs-list,
+.page[data-page="devolucao_total"] .item-inner,
+.page[data-page="devolucao_parcial"] .list-block,
+.page[data-page="devolucao_parcial"] .input-item,
+.page[data-page="devolucao_parcial"] .item-inner,
+.page[data-page="devolucao_parcial"] .list-block,
+.page[data-page="devolucao_parcial"] .inputs-list,
+.page[data-page="devolucao_parcial"] .item-inner,
+.page[data-page="informa_atraso"] .list-block,
+.page[data-page="informa_atraso"] .input-item,
+.page[data-page="informa_atraso"] .item-inner,
+.page[data-page="informa_atraso"] .list-block,
+.page[data-page="informa_atraso"] .inputs-list,
+.page[data-page="informa_atraso"] .item-inner,
+.page[data-page="problema_estrada"] .list-block,
+.page[data-page="problema_estrada"] .input-item,
+.page[data-page="problema_estrada"] .item-inner,
+.page[data-page="problema_estrada"] .list-block,
+.page[data-page="problema_estrada"] .inputs-list,
+.page[data-page="problema_estrada"] .item-inner,
+.page[data-page="cadastro"] .list-block,
+.page[data-page="cadastro"] .input-item,
+.page[data-page="cadastro"] .item-inner,
+.page[data-page="cadastro"] .list-block,
+.page[data-page="cadastro"] .inputs-list,
+.page[data-page="cadastro"] .item-inner,
+.page[data-page="cadastro-2"] .list-block,
+.page[data-page="cadastro-2"] .input-item,
+.page[data-page="cadastro-2"] .item-inner,
+.page[data-page="cadastro-2"] .list-block,
+.page[data-page="cadastro-2"] .inputs-list,
+.page[data-page="cadastro-2"] .item-inner {
+  display: block;
+  margin-bottom: 8px;
+  padding-bottom: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+
+.list-block li li:last-child .item-inner:after,
+.list-block li:last-child li .item-inner:after {
+  background-color: #fff;
+}
+
+.page[data-page="opcoes"] .list-block,
+.page[data-page="opcoes"] .input-item,
+.page[data-page="opcoes"] .item-inner,
+.page[data-page="opcoes"] .list-block,
+.page[data-page="opcoes"] .inputs-list,
+.page[data-page="opcoes"] .item-inner {
+  display: block;
+  /* margin-bottom: 8px; */
+  /* padding-bottom: 0; */
+  margin-left: 10px;
+  margin-right: 10px;
+  /* font-size: 15px; */
+}
+
+.page[data-page="informa_atraso"] .item-title,
+.page[data-page="problema_estrada"] .item-title,
+.page[data-page="finalizacao_descarga"] .item-title,
+.page[data-page="devolucao_total"] .item-title,
+.page[data-page="devolucao_parcial"] .item-title,
+.page[data-page="problema_caminhao"] .item-title,
+.page[data-page="opcoes"] .item-title,
+.page[data-page="cadastro"] .item-title,
+.page[data-page="login"] .item-title,
+.page[data-page="esqueci_senha"] .item-title,
+.page[data-page="cadastro-2"] .item-title {
+  width: 100% !important;
+}
+
+.page[data-page="cadastro-2"] input[type="date"] {
+  margin-top: 12px;
+}
+
+.page[data-page="esqueci_senha"] input[type="tel"],
+.page[data-page="login"] input[type="password"],
+.page[data-page="lances"] input[type="tel"],
+.page[data-page="oferta_detalhes"] input[type="tel"],
+.page[data-page="agenda_detalhe"] input[type="tel"],
+.page[data-page="login"] input[type="tel"],
+.page[data-page="cadastro"] input[type="password"],
+.page[data-page="opcoes"] input[type="password"],
+.page[data-page="cadastro-2"] input[type="tel"],
+.page[data-page="cadastro"] input[type="tel"],
+.page[data-page="cadastro"] input[type="email"],
+.page[data-page="cadastro-2"] input[type="email"],
+.page[data-page="cadastro"] input[type="number"],
+.page[data-page="cadastro-2"] input[type="number"],
+.page[data-page="opcoes"] input[type="tel"],
+.page[data-page="opcoes"] input[type="email"],
+.page[data-page="opcoes"] input[type="number"],
+.page[data-page="login"] input[type="number"],
+.page[data-page="login"] input[type="text"],
+.page[data-page="opcoes"] input[type="text"],
+.page[data-page="cadastro"] input[type="text"],
+.page[data-page="cadastro-2"] input[type="text"],
+.page[data-page="cadastro-2"] input[type="date"],
+.page[data-page="cadastro-2"] input[type="number"],
+.page[data-page="esqueci_senha"] input[type="number"],
+.page[data-page="lances"] input[type="number"],
+.page[data-page="lances"] input[type="text"],
+.page[data-page="tipo_oferta"] input[type="text"],
+.page[data-page="tipo_oferta"] input[type="number"],
+.page[data-page="oferta_detalhes"] input[type="text"],
+.page[data-page="agenda_detalhe"] input[type="text"],
+.page[data-page="oferta_detalhes"] input[type="number"],
+.page[data-page="filtro"] input[type="text"],
+.page[data-page="opcoes"] input[type="text"],
+.page[data-page="esqueci_senha"] input[type="text"] {
+  /*border: 1px solid #ccc;*/
+  border-bottom: 1px solid #000;
+  margin-top: 15px;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.page[data-page="informa_atraso"] .item-input,
+.page[data-page="problema_estrada"] .item-input,
+.page[data-page="finalizacao_descarga"] .item-input,
+.page[data-page="devolucao_parcial"] .item-input,
+.page[data-page="devolucao_total"] .item-input,
+.page[data-page="problema_caminhao"] .item-input {
+  margin: 0px !important;
+  /*margin-bottom: -7px; */
+}
+
+.page[data-page="informa_atraso"] select,
+.page[data-page="problema_estrada"] select,
+.page[data-page="finalizacao_descarga"] select,
+.page[data-page="devolucao_parcial"] select,
+.page[data-page="devolucao_total"] select,
+.page[data-page="problema_caminhao"] select,
+.page[data-page="opcoes"] select,
+.page[data-page="cadastro"] select,
+.page[data-page="cadastro-2"] select {
+  border-bottom: 1px solid #000;
+  margin-top: 15px;
+  font-size: 16px;
+  margin-top: 8px;
+  background: url("../assets/img/select.png") no-repeat 97% 50%;
+}
+
+.page[data-page="login"] .item-input,
+.page[data-page="opcoes"] .item-input,
+.page[data-page="cadastro"] .item-input,
+.page[data-page="esqueci_senha"] .item-input,
+.page[data-page="cadastro-2"] .item-input {
+  margin-bottom: 0px !important;
+  margin-left: 0px;
+}
+
+.panel {
+  background-image: url(../assets/img/background.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  /*background: none !important;*/
+}
+
+.page[data-page="perdedor_Oferta"] .navbar::after,
+.page[data-page="ofertas_destino_map"] .navbar::after,
+.page[data-page="ofertas_map"] .navbar::after,
+.page[data-page="perdedor"] .navbar::after,
+.page[data-page="vencedor"] .navbar::after,
+.page[data-page="devolucao_total_final"] .navbar::after,
+.page[data-page="resultado_devolucao"] .navbar::after,
+.page[data-page="finalizacao_descarga_final"] .navbar::after,
+.page[data-page="devolucao_parcial_final"] .navbar::after,
+.page[data-page="problema_estrada"] .navbar::after,
+.page[data-page="problema_caminhao_final"] .navbar::after,
+.page[data-page="chegada_origem"] .navbar::after,
+.page[data-page="apresentacao_descarga_final"] .navbar::after,
+.page[data-page="apresentacao_descarga_final_viagens"] .navbar::after,
+.page[data-page="problema_estrada_final"] .navbar::after,
+.page[data-page="informa_atraso_final"] .navbar::after,
+.page[data-page="informa_atraso"] .navbar::after,
+.page[data-page="finalizacao_descarga"] .navbar::after,
+.page[data-page="devolucao_total"] .navbar::after,
+.page[data-page="devolucao_parcial"] .navbar::after,
+.page[data-page="problema_caminhao"] .navbar::after,
+.page[data-page="ocorrencia"] .navbar::after,
+.page[data-page="entregas_home"] .navbar::after,
+.page[data-page="devolucao_home"] .navbar::after,
+.page[data-page="opcoes"] .navbar::after,
+.page[data-page="filtro"] .navbar::after,
+.page[data-page="avisos-detalhes"] .navbar::after,
+.page[data-page="avisos"] .navbar::after,
+.page[data-page="fale_conosco"] .navbar::after,
+.page[data-page="opcoes"] .navbar::after,
+.page[data-page="cadastro"] .navbar::after,
+.page[data-page="lances"] .navbar::after,
+.page[data-page="tipo_oferta"] .navbar::after,
+.page[data-page="oferta_detalhes"] .navbar::after,
+.page[data-page="agenda_detalhe"] .navbar::after,
+.page[data-page="minha_agenda"] .navbar::after,
+.page[data-page="minhas_ofertas"] .navbar::after,
+.page[data-page="cadastro-2"] .navbar::after,
+.page[data-page="esqueci_senha2"] .navbar::after,
+.page[data-page="dashboard"] .navbar::after,
+.page[data-page="ofertas"] .navbar::after,
+.page[data-page="ofertas_filtro"] .navbar::after,
+.page[data-page="esqueci_senha"] .navbar::after {
+  content: none;
+}
+
+.page[data-page="login"] ul,
+.page[data-page="opcoes"] ul,
+.page[data-page="cadastro"] ul,
+.page[data-page="esqueci_senha"] ul,
+.page[data-page="cadastro-2"] ul {
+  background: none !important;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.page[data-page="login"] img.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16%;
+}
+
+.page[data-page="walkthrough"] .walkthrough {
+  height: 100%;
+}
+
+.page[data-page="login"] .button-senha {
+  color: #dc9f4c;
+  margin-top: 25px;
+}
+
+.page[data-page="esqueci_senha2"] .button-senha {
+  color: #d0021b;
+  margin-top: 25px;
+}
+
+.page[data-page="termo_contrato"] .acoes,
+.page[data-page="finalizando_cadastro"] .acoes {
+  margin-top: -38px;
+}
+
+.page[data-page="termo_contrato"] .button-verde {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 15px;
+  color: #14ae4e;
+  background-color: #fff !important;
+  width: 200px;
+  border: 1px solid #14ae4e !important;
+  border-radius: 100px !important;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 18px;
+  margin-bottom: 39px;
+}
+
+.page[data-page="esqueci_senha2"] .button-verde,
+.page[data-page="finalizando_cadastro"] .button-verde {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 15px;
+  color: #14ae4e;
+  background-color: #fff !important;
+  width: 250px;
+  border: 1px solid #14ae4e !important;
+  border-radius: 100px !important;
+  height: 48px;
+  line-height: 48px;
+  margin-top: 18px;
+}
+
+
+.page[data-page="fale_conosco"] .button-openChat {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 15px;
+  margin-top: 16px;
+  color: #1eafe5;
+  background-color: #fff !important;
+  width: 250px;
+  border: 1px solid #1eafe5 !important;
+  border-radius: 100px !important;
+
+  height: 48px;
+  line-height: 48px;
+}
+
+.page[data-page="fale_conosco"] .button-suporte,
+.page[data-page="esqueci_senha2"] .button-suporte,
+.page[data-page="termo_contrato"] .button-suporte,
+.page[data-page="finalizando_cadastro"] .button-suporte {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 15px;
+  margin-top: 16px;
+  color: #dc9f4c;
+  background-color: #fff !important;
+  width: 250px;
+  border: 1px solid #dc9f4c !important;
+  border-radius: 100px !important;
+
+  height: 48px;
+  line-height: 48px;
+}
+
+.page[data-page="devolucao_total_final"] .button-index,
+.page[data-page="resultado_devolucao"] .button-index,
+.page[data-page="finalizacao_descarga_final"] .button-index,
+.page[data-page="devolucao_parcial_final"] .button-index,
+.page[data-page="devolucao_total"] .button-index,
+.page[data-page="devolucao_parcial"] .button-index,
+.page[data-page="finalizacao_descarga"] .button-index {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 15px;
+  margin-top: 30px;
+  background-color: #fff !important;
+  color: #2196f3 !important;
+  width: 250px;
+  border: solid 1px !important;
+  border-radius: 100px !important;
+  margin-bottom: 17px;
+  height: 48px;
+  line-height: 48px;
+}
+
+.page[data-page="informa_atraso"] .button-index,
+.page[data-page="problema_estrada"] .button-index,
+.page[data-page="problema_caminhao"] .button-index {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 15px;
+  margin-top: 50px;
+  background-color: #fff !important;
+  color: #2196f3 !important;
+  width: 250px;
+  border: solid 1px !important;
+  border-radius: 100px !important;
+  margin-bottom: 17px;
+  height: 48px;
+  line-height: 48px;
+}
+
+.page[data-page="walkthrough"] .button-index {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 15px;
+  margin-top: 45px;
+  background-color: #fff !important;
+  color: #2196f3 !important;
+  width: 92%;
+  border: solid 1px !important;
+  border-radius: 100px !important;
+
+  height: 48px;
+  line-height: 48px;
+}
+
+.page[data-page="lances"] .button-novoLance {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 15px;
+  margin-top: 25px;
+  background-color: #fff !important;
+  color: #1ca23d !important;
+  width: 37%;
+  border: solid 1px !important;
+  border-radius: 100px !important;
+  height: 48px;
+  line-height: 48px;
+}
+
+.page[data-page="agenda_detalhe"] .button-LanceAutomatico,
+.page[data-page="oferta_detalhes"] .button-LanceAutomatico,
+.page[data-page="lances"] .button-LanceAutomatico {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 15px;
+  margin-top: 25px;
+  background-color: #fff !important;
+  color: #2196f3 !important;
+  width: 50%;
+  border: solid 1px !important;
+  border-radius: 100px !important;
+
+  height: 48px;
+  line-height: 48px;
+}
+
+.page[data-page="lances"] .button-index {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 15px;
+  margin-top: 25px;
+  background-color: #fff !important;
+  color: #2196f3 !important;
+  width: 180px;
+  border: solid 1px !important;
+  border-radius: 100px !important;
+
+  height: 48px;
+  line-height: 48px;
+}
+
+.page[data-page="opcoes"] .button-index1 {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 15px;
+  margin-top: 25px;
+  background-color: #fff !important;
+  color: #2196f3 !important;
+  width: 40%;
+  border: solid 1px !important;
+  border-radius: 100px !important;
+  margin-bottom: 15px;
+  height: 48px;
+  line-height: 48px;
+}
+
+.page[data-page="agenda_detalhe"] .button-index,
+.page[data-page="oferta_detalhes"] .button-index {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 15px;
+  margin-top: 25px;
+  background-color: #fff !important;
+  color: #1ca23d !important;
+  width: 60%;
+  border: solid 1px !important;
+  border-radius: 100px !important;
+  height: 48px;
+  line-height: 48px;
+}
+
+.page[data-page="minha_agenda"] .button-index,
+.page[data-page="minhas_ofertas"] .button-index,
+.page[data-page="tipo_oferta"] .button-index,
+.page[data-page="opcoes"] .button-index,
+.page[data-page="cadastro"] .button-index,
+.page[data-page="cadastro-2"] .button-index,
+.page[data-page="termo_contrato"] .button-index,
+.page[data-page="finalizando_cadastro"] .button-index,
+.page[data-page="esqueci_senha"] .button-index,
+.page[data-page="esqueci_senha2"] .button-index,
+.page[data-page="login"] .button-index {
+
+  display: block;
+  font-size: 15px;
+  margin: 10px auto;
+  background-color: #fff !important;
+  color: #2196f3 !important;
+  width: 70%;
+  border: solid 1px !important;
+  border-radius: 100px !important;
+
+  height: 48px;
+  line-height: 48px;
+}
+
+.page[data-page="login"] .esqueci-senha {
+  text-align: center;
+  margin-top: 20px !important;
+}
+
+.page[data-page="esqueci_senha2"] .esqueci-senha {
+  text-align: center;
+  margin-top: 20px !important;
+}
+
+.page[data-page="login"] .page-content,
+.page[data-page="dashboard"] .page-content,
+.page[data-page="walkthrough"] .page-content {
+  background-image: url(../assets/img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page[data-page="walkthrough"] .walkthrough-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.page[data-page="walkthrough"] .walkthrough-slide {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+@media screen and (max-width: 300px) {
+  .page[data-page="walkthrough"] .walkthrough-slide .slide-title {
+    font-family: "Roboto";
+    font-size: 20px;
+    margin: 4%;
+    margin-top: 12%;
+  }
+}
+
+@media screen and (min-width: 301px) {
+  .page[data-page="walkthrough"] .walkthrough-slide .slide-title {
+    font-family: "Roboto";
+    font-size: 30px;
+    margin: 4%;
+    margin-top: 12%;
+  }
+
+}
+
+
+.page[data-page="walkthrough"] .aling {
+  margin: 20% !important;
+  margin-top: 35px !important;
+  margin-bottom: 0 !important;
+}
+
+.page[data-page="walkthrough"] .walkthrough-slide .slide-media {
+  /* margin-top: 15%; */
+}
+
+.page[data-page="walkthrough"] .walkthrough-slide .slide-media img {
+  display: inline-block;
+
+  width: 94%;
+}
+
+.page[data-page="login"] .title-login {
+  font-size: 20px;
+  text-align: center;
+  line-height: 26px;
+  margin-top: 30px;
+}
+
+.page[data-page="cadastro-2"] ul:before,
+.page[data-page="cadastro-2"] ul:after {
+  content: none;
+}
+
+.page[data-page="login"] #senha,
+.page[data-page="opcoes"] #confirma_senha,
+.page[data-page="cadastro"] #confirma_senha,
+.page[data-page="opcoes"] #senha-perfil,
+.page[data-page="cadastro"] #senha_cad {
+  -webkit-text-security: disc;
+}
+
+.page[data-page="opcoes"] .navbar::after,
+.page[data-page="cadastro"] .navbar::after,
+.page[data-page="termo_contrato"] .navbar::after,
+.page[data-page="cadastro-2"] .navbar::after,
+.page[data-page="finalizando_cadastro"] .navbar::after {
+  content: none;
+}
+
+.page[data-page="esqueci_senha"] .logo {
+  margin-top: 23px;
+}
+
+.page[data-page="avisos"] .nao-lido-color {
+  background-color: #eee;
+}
+
+.page[data-page="avisos-detalhes"] .logo,
+.page[data-page="avisos"] .logo,
+.page[data-page="fale_conosco"] .logo,
+.page[data-page="problema_estrada"] .logo,
+.page[data-page="informa_atraso"] .logo,
+.page[data-page="finalizacao_descarga_final"] .logo,
+.page[data-page="devolucao_parcial_final"] .logo,
+.page[data-page="resultado_devolucao"] .logo,
+.page[data-page="devolucao_total_final"] .logo,
+.page[data-page="apresentacao_descarga_final"] .logo,
+.page[data-page="apresentacao_descarga_final_viagens"] .logo,
+.page[data-page="chegada_origem"] .logo,
+.page[data-page="problema_caminhao_final"] .logo,
+.page[data-page="problema_estrada_final"] .logo,
+.page[data-page="informa_atraso_final"] .logo,
+.page[data-page="problema_caminhao"] .logo,
+.page[data-page="finalizacao_descarga"] .logo,
+.page[data-page="devolucao_total"] .logo,
+.page[data-page="devolucao_parcial"] .logo,
+.page[data-page="ocorrencia"] .logo,
+.page[data-page="entregas_home"] .logo,
+.page[data-page="devolucao_home"] .logo,
+.page[data-page="opcoes"] .logo,
+.page[data-page="filtro"] .logo,
+.page[data-page="vencedor"] .logo,
+.page[data-page="ofertas_destino_map"] .logo,
+.page[data-page="ofertas_map"] .logo,
+.page[data-page="perdedor_Oferta"] .logo,
+.page[data-page="perdedor"] .logo,
+.page[data-page="ofertas_filtro"] .logo,
+.page[data-page="ofertas"] .logo,
+.page[data-page="lances"] .logo,
+.page[data-page="minha_agenda"] .logo,
+.page[data-page="minhas_ofertas"] .logo,
+.page[data-page="agenda_detalhe"] .logo,
+.page[data-page="oferta_detalhes"] .logo,
+.page[data-page="opcoes"] .logo,
+.page[data-page="tipo_oferta"] .logo,
+.page[data-page="cadastro"] .logo {
+  margin-top: 12px;
+}
+
+.page[data-page="avisos"] .content-block,
+.page[data-page="finalizacao_descarga_final"] .content-block,
+.page[data-page="devolucao_parcial_final"] .content-block,
+.page[data-page="devolucao_total_final"] .content-block,
+.page[data-page="resultado_devolucao"] .content-block,
+.page[data-page="problema_estrada"] .content-block,
+.page[data-page="informa_atraso"] .content-block,
+.page[data-page="problema_caminhao_final"] .content-block,
+.page[data-page="apresentacao_descarga_final"] .content-block,
+.page[data-page="apresentacao_descarga_final_viagens"] .content-block,
+.page[data-page="chegada_origem"] .content-block,
+.page[data-page="problema_estrada_final"] .content-block,
+.page[data-page="informa_atraso_final"] .content-block,
+.page[data-page="finalizacao_descarga"] .content-block,
+.page[data-page="devolucao_total"] .content-block,
+.page[data-page="devolucao_parcial"] .content-block,
+.page[data-page="problema_caminhao"] .content-block,
+.page[data-page="ocorrencia"] .content-block,
+.page[data-page="entregas_home"] .content-block,
+.page[data-page="devolucao_home"] .content-block,
+.page[data-page="opcoes"] .content-block,
+.page[data-page="filtro"] .content-block,
+.page[data-page="vencedor"] .content-block,
+.page[data-page="perdedor_Oferta"] .content-block,
+.page[data-page="perdedor"] .content-block,
+.page[data-page="ofertas_filtro"] .content-block,
+.page[data-page="ofertas"] .content-block,
+.page[data-page="lances"] .content-block,
+.page[data-page="minhas_ofertas"] .content-block,
+.page[data-page="minha_agenda"] .content-block,
+.page[data-page="agenda_detalhe"] .content-block,
+.page[data-page="oferta_detalhes"] .content-block,
+.page[data-page="opcoes"] .content-block,
+.page[data-page="tipo_oferta"] .content-block,
+.page[data-page="cadastro"] .content-block {
+  /*line-height: 1px;*/
+
+  margin: 15px 0 0 !important;
+  padding-left: 0px !important;
+}
+
+.page[data-page="vencedor"] .barra,
+.page[data-page="perdedor_Oferta"] .barra,
+.page[data-page="perdedor"] .barra,
+.page[data-page="minhas_ofertas"] .barra,
+.page[data-page="oferta_detalhes"] .barra,
+.page[data-page="tipo_oferta"] .barra,
+.page[data-page="ofertas_filtro"] .barra,
+.page[data-page="lances"] .barra {
+  position: relative;
+  background-color: #d0021b;
+  width: 10px;
+  height: 50px;
+}
+
+.page[data-page="ofertas_map"] .barra,
+.page[data-page="ofertas_destino_map"] .barra,
+.page[data-page="ofertas"] .barra {
+  position: relative;
+  background-color: #7ed321;
+  width: 10px;
+  height: 50px;
+}
+
+.page[data-page="avisos-detalhes"] .barra,
+.page[data-page="avisos"] .barra {
+
+  position: relative;
+  background-color: #f44336;
+  width: 10px;
+  height: 50px;
+
+}
+
+.page[data-page="agenda_detalhe"] .barra,
+.page[data-page="minha_agenda"] .barra {
+  position: relative;
+  background-color: #4a90e2;
+  width: 10px;
+  height: 50px;
+}
+
+.page[data-page="fale_conosco"] .barra {
+  position: relative;
+  background-color: #f6ca14;
+  width: 10px;
+  height: 50px;
+}
+
+.page[data-page="finalizacao_descarga_final"] .barra,
+.page[data-page="devolucao_parcial_final"] .barra,
+.page[data-page="devolucao_total_final"] .barra,
+.page[data-page="resultado_devolucao"] .barra,
+.page[data-page="devolucao_total"] .barra,
+.page[data-page="devolucao_parcial"] .barra,
+.page[data-page="problema_estrada"] .barra,
+.page[data-page="informa_atraso"] .barra,
+.page[data-page="finalizacao_descarga"] .barra,
+.page[data-page="problema_caminhao"] .barra,
+.page[data-page="problema_caminhao_final"] .barra,
+.page[data-page="apresentacao_descarga_final"] .barra,
+.page[data-page="apresentacao_descarga_final_viagens"] .barra,
+.page[data-page="chegada_origem"] .barra,
+.page[data-page="problema_estrada_final"] .barra,
+.page[data-page="informa_atraso_final"] .barra,
+.page[data-page="ocorrencia"] .barra,
+.page[data-page="entregas_home"] .barra,
+.page[data-page="devolucao_home"] .barra,
+.page[data-page="opcoes"] .barra,
+.page[data-page="filtro"] .barra {
+  position: relative;
+  background-color: #bdc347;
+  width: 10px;
+  height: 50px;
+}
+
+.page[data-page="minhas_ofertas"] .barra {
+  position: relative;
+  background-color: #dc9f4c;
+  width: 10px;
+  height: 50px;
+}
+
+.page[data-page="opcoes"] .barra {
+  position: relative;
+  background-color: #d0021b;
+  width: 10px;
+  height: 50px;
+}
+
+.page[data-page="cadastro"] .barra {
+  position: relative;
+  background-color: #d0021b;
+  width: 10px;
+  height: 140px;
+}
+
+.page[data-page="problema_estrada"] .text,
+.page[data-page="informa_atraso"] .text,
+.page[data-page="finalizacao_descarga"] .text,
+.page[data-page="devolucao_total"] .text,
+.page[data-page="devolucao_parcial"] .text,
+.page[data-page="problema_caminhao"] .text,
+.page[data-page="problema_caminhao_final"] .text,
+.page[data-page="apresentacao_descarga_final"] .text,
+.page[data-page="apresentacao_descarga_final_viagens"] .text,
+.page[data-page="chegada_origem"] .text,
+.page[data-page="devolucao_total_final"] .text,
+.page[data-page="resultado_devolucao"] .text,
+.page[data-page="finalizacao_descarga_final"] .text,
+.page[data-page="devolucao_parcial_final"] .text,
+.page[data-page="problema_estrada_final"] .text,
+.page[data-page="informa_atraso_final"] .text,
+.page[data-page="ocorrencia"] .text,
+.page[data-page="devolucao_home"] .text,
+.page[data-page="entregas_home"] .text {
+  bottom: 38px;
+  position: relative;
+  margin-left: 25px;
+}
+
+.page[data-page="vencedor"] .text,
+.page[data-page="avisos"] .text,
+.page[data-page="fale_conosco"] .text,
+.page[data-page="opcoes"] .text,
+.page[data-page="filtro"] .text,
+.page[data-page="perdedor_Oferta"] .text,
+.page[data-page="perdedor"] .text,
+.page[data-page="minhas_ofertas"] .text,
+.page[data-page="minha_agenda"] .text,
+.page[data-page="agenda_detalhe"] .text,
+.page[data-page="oferta_detalhes"] .text,
+.page[data-page="tipo_oferta"] .text,
+.page[data-page="ofertas_filtro"] .text,
+.page[data-page="lances"] .text,
+.page[data-page="ofertas"] .text {
+  bottom: 40px;
+  position: relative;
+  margin-left: 25px;
+}
+
+.page[data-page="opcoes"] .text {
+  bottom: 41px;
+  position: relative;
+  margin-left: 25px;
+}
+
+.page[data-page="cadastro"] .text {
+  padding-top: 20px;
+}
+
+.page[data-page="problema_estrada"] .cardinfo,
+.page[data-page="informa_atraso"] .cardinfo,
+.page[data-page="finalizacao_descarga"] .cardinfo,
+.page[data-page="devolucao_total"] .cardinfo,
+.page[data-page="devolucao_parcial"] .cardinfo,
+.page[data-page="problema_caminhao"] .cardinfo,
+.page[data-page="problema_caminhao_final"] .cardinfo,
+.page[data-page="apresentacao_descarga_final"] .cardinfo,
+.page[data-page="apresentacao_descarga_final_viagens"] .cardinfo,
+.page[data-page="chegada_origem"] .cardinfo,
+.page[data-page="problema_estrada_final"] .cardinfo,
+.page[data-page="informa_atraso_final"] .cardinfo,
+.page[data-page="finalizacao_descarga_final"] .cardinfo,
+.page[data-page="devolucao_parcial_final"] .cardinfo,
+.page[data-page="devolucao_total_final"] .cardinfo,
+.page[data-page="resultado_devolucao"] .cardinfo,
+.page[data-page="ocorrencia"] .cardinfo,
+.page[data-page="devolucao_home"] .cardinfo,
+.page[data-page="entregas_home"] .cardinfo {
+  margin: 0 !important;
+  box-shadow: 0px 0px 7px rgba(0, 10, 0, 0.3) !important;
+}
+
+.page[data-page="problema_estrada"] .card-content,
+.page[data-page="informa_atraso"] .card-content,
+.page[data-page="finalizacao_descarga"] .card-content,
+.page[data-page="devolucao_parcial"] .card-content,
+.page[data-page="devolucao_total"] .card-content,
+.page[data-page="problema_caminhao"] .card-content,
+.page[data-page="problema_caminhao_final"] .card-content,
+.page[data-page="apresentacao_descarga_final"] .card-content,
+.page[data-page="apresentacao_descarga_final_viagens"] .card-content,
+.page[data-page="chegada_origem"] .card-content,
+.page[data-page="finalizacao_descarga_final"] .card-content,
+.page[data-page="devolucao_parcial_final"] .card-content,
+.page[data-page="resultado_devolucao"] .card-content,
+.page[data-page="devolucao_total_final"] .card-content,
+.page[data-page="informa_atraso_final"] .card-content,
+.page[data-page="problema_estrada_final"] .card-content,
+.page[data-page="ocorrencia"] .card-content,
+.page[data-page="devolucao_home"] .card-content,
+.page[data-page="entregas_home"] .card-content {
+  margin-left: 15px !important;
+  padding: 10px;
+}
+
+.page[data-page="ofertas"] #lsita-cards {
+  margin-top: 0 !important;
+}
+
+.page[data-page="tipo_oferta"] #mycard,
+.page[data-page="minhas_ofertas"] #mycard,
+.page[data-page="minha_agenda"] #mycard,
+.page[data-page="agenda_detalhe"] #mycard,
+.page[data-page="oferta_detalhes"] #mycard,
+.page[data-page="lances"] #mycard,
+.page[data-page="ofertas_filtro"] #mycard {
+  /*.page[data-page=ofertas] #lsita-cards{*/
+
+  margin-top: -16px;
+}
+
+.page[data-page="tipo_oferta"] .linha2-inicial,
+.page[data-page="minhas_ofertas"] .linha2-inicial,
+.page[data-page="minha_agenda"] .linha2-inicial,
+.page[data-page="oferta_detalhes"] .linha2-inicial,
+.page[data-page="agenda_detalhe"] .linha2-inicial,
+.page[data-page="ofertas_filtro"] .linha2-inicial,
+.page[data-page="lances"] .linha2-inicial,
+.page[data-page="ofertas"] .linha2-inicial {
+  margin-left: 6px;
+  margin-top: 5px;
+}
+
+.page[data-page="tipo_oferta"] .linha-inicial,
+.page[data-page="minhas_ofertas"] .linha-inicial,
+.page[data-page="minha_agenda"] .linha-inicial,
+.page[data-page="oferta_detalhes"] .linha-inicial,
+.page[data-page="agenda_detalhe"] .linha-inicial,
+.page[data-page="ofertas_filtro"] .linha-inicial,
+.page[data-page="lances"] .linha-inicial,
+.page[data-page="ofertas"] .linha-inicial {
+  margin-left: 1%;
+}
+
+.page[data-page="problema_estrada"] p.para1,
+.page[data-page="informa_atraso"] p.para1,
+.page[data-page="finalizacao_descarga"] p.para1,
+.page[data-page="devolucao_total"] p.para1,
+.page[data-page="devolucao_parcial"] p.para1,
+.page[data-page="problema_caminhao"] p.para1,
+.page[data-page="problema_caminhao_final"] p.para1,
+.page[data-page="apresentacao_descarga_final_viagens"] p.para1,
+.page[data-page="apresentacao_descarga_final"] p.para1,
+.page[data-page="chegada_origem"] p.para1,
+.page[data-page="problema_estrada_final"] p.para1,
+.page[data-page="finalizacao_descarga_final"] p.para1,
+.page[data-page="devolucao_parcial_final"] p.para1,
+.page[data-page="devolucao_total_final"] p.para1,
+.page[data-page="resultado_devolucao"] p.para1,
+.page[data-page="informa_atraso_final"] p.para1,
+.page[data-page="ocorrencia"] p.para1,
+.page[data-page="devolucao_home"] p.para1,
+.page[data-page="entregas_home"] p.para1 {
+  font-size: 18px !important;
+  margin: 0;
+}
+
+.page[data-page="vencedor"] p.para1,
+.page[data-page="opcoes"] p.para1,
+.page[data-page="filtro"] p.para1,
+.page[data-page="avisos"] p.para1,
+.page[data-page="avisos-detalhes"] p.para1,
+.page[data-page="fale_conosco"] p.para1,
+.page[data-page="perdedor_Oferta"] p.para1,
+.page[data-page="perdedor"] p.para1,
+.page[data-page="minhas_ofertas"] p.para1,
+.page[data-page="minha_agenda"] p.para1,
+.page[data-page="oferta_detalhes"] p.para1,
+.page[data-page="agenda_detalhe"] p.para1,
+.page[data-page="tipo_oferta"] p.para1,
+.page[data-page="lances"] p.para1,
+.page[data-page="ofertas_filtro"] p.para1,
+.page[data-page="ofertas_map"] p.para1,
+.page[data-page="ofertas_destino_map"] p.para1,
+.page[data-page="ofertas"] p.para1 {
+  font-size: 24px !important;
+  margin: 0;
+}
+
+.page[data-page="tipo_oferta"] .text-destino,
+.page[data-page="minhas_ofertas"] .text-destino,
+.page[data-page="minha_agenda"] .text-destino,
+.page[data-page="oferta_detalhes"] .text-destino,
+.page[data-page="agenda_detalhe"] .text-destino,
+.page[data-page="ofertas_filtro"] .text-destino,
+.page[data-page="lances"] .text-destino,
+.page[data-page="ofertas"] .text-destino {
+  position: relative !important;
+  padding-left: 35px;
+}
+
+.page[data-page="perdedor_Oferta"] .linhas1,
+.page[data-page="perdedor"] .linhas1 {
+  /*margin-left: -5%;*/
+  /*margin-right: -5%;*/
+  border-top: solid 1px #9b9b9b;
+  padding: 4px;
+  border-bottom: solid 1px #9b9b9b;
+}
+
+.page[data-page="perdedor_Oferta"] .linhas,
+.page[data-page="perdedor"] .linhas {
+  /*margin: -15px;*/
+  /*margin-left: -5%;*/
+  /*margin-right: -;5%;*/
+  border-bottom: solid 1px #9b9b9b;
+  padding: 4px;
+}
+
+.page[data-page="perdedor_Oferta"] .col-66,
+.page[data-page="perdedor"] .col-66 {
+  left: 15px;
+  position: relative;
+}
+
+.page[data-page="perdedor_Oferta"] .card,
+.page[data-page="avisos"] .card,
+.page[data-page="fale_conosco"] .card,
+.page[data-page="opcoes"] .card,
+.page[data-page="filtro"] .card,
+.page[data-page="perdedor"] .card {
+  box-shadow: none !important;
+  margin: 0;
+}
+
+.page[data-page="vencedor"] .card,
+.page[data-page="tipo_oferta"] .card,
+.page[data-page="minhas_ofertas"] .card,
+.page[data-page="minha_agenda"] .card,
+.page[data-page="oferta_detalhes"] .card,
+.page[data-page="agenda_detalhe"] .card,
+.page[data-page="lances"] .card,
+.page[data-page="ofertas_filtro"] .card,
+.page[data-page="ofertas"] .card {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3) !important;
+  margin: 0;
+}
+
+.page[data-page="opcoes"] p.para1,
+.page[data-page="cadastro"] p.para1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.page[data-page="opcoes"] p.para2,
+.page[data-page="cadastro"] p.para2 {
+  font-size: 31px;
+  line-height: 36px;
+  margin: 0;
+}
+
+.page[data-page="opcoes"] img.pag1,
+.page[data-page="cadastro"] img.pag1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 15px;
+  position: relative;
+}
+
+.page[data-page="opcoes"] form.form1,
+.page[data-page="cadastro"] form.form1 {
+  top: -80px;
+  position: relative;
+}
+
+.page[data-page="cadastro"] img.btvoltar {
+  /*margin-left: 68%;
+margin-top: 32px;*/
+}
+
+.page[data-page="avisos-detalhes"] img.imglogo,
+.page[data-page="vencedor"] img.imglogo,
+.page[data-page="problema_estrada"] img.imglogo,
+.page[data-page="finalizacao_descarga"] img.imglogo,
+.page[data-page="devolucao_parcial"] img.imglogo,
+.page[data-page="devolucao_total"] img.imglogo,
+.page[data-page="problema_caminhao"] img.imglogo,
+.page[data-page="informa_atraso"] img.imglogo,
+.page[data-page="problema_caminhao_final"] img.imglogo,
+.page[data-page="apresentacao_descarga_final"] img.imglogo,
+.page[data-page="apresentacao_descarga_final_viagens"] img.imglogo,
+.page[data-page="chegada_origem"] img.imglogo,
+.page[data-page="problema_estrada_final"] img.imglogo,
+.page[data-page="finalizacao_descarga_final"] img.imglogo,
+.page[data-page="devolucao_parcial_final"] img.imglogo,
+.page[data-page="devolucao_total_final"] img.imglogo,
+.page[data-page="resultado_devolucao"] img.imglogo,
+.page[data-page="informa_atraso_final"] img.imglogo,
+.page[data-page="ocorrencia"] img.imglogo,
+.page[data-page="entregas_home"] img.imglogo,
+.page[data-page="devolucao_home"] img.imglogo,
+.page[data-page="opcoes"] img.imglogo,
+.page[data-page="filtro"] img.imglogo,
+.page[data-page="fale_conosco"] img.imglogo,
+.page[data-page="avisos"] img.imglogo,
+.page[data-page="perdedor_Oferta"] img.imglogo,
+.page[data-page="perdedor"] img.imglogo,
+.page[data-page="opcoes"] img.imglogo,
+.page[data-page="cadastro"] img.imglogo,
+.page[data-page="tipo_oferta"] img.imglogo,
+.page[data-page="oferta_detalhes"] img.imglogo,
+.page[data-page="agenda_detalhe"] img.imglogo,
+.page[data-page="minhas_ofertas"] img.imglogo,
+.page[data-page="minha_agenda"] img.imglogo,
+.page[data-page="lances"] img.imglogo,
+.page[data-page="ofertas_filtro"] img.imglogo,
+.page[data-page="ofertas"] img.imglogo,
+.page[data-page="ofertas_map"] img.imglogo,
+.page[data-page="ofertas_destino_map"] img.imglogo,
+.page[data-page="termo_contrato"] img.imglogo,
+.page[data-page="finalizando_cadastro"] img.imglogo,
+.page[data-page="esqueci_senha2"] img.imglogo,
+.page[data-page="cadastro-2"] img.imglogo {
+  width: 142px;
+}
+
+.page[data-page="avisos-detalhes"] .navbar,
+.page[data-page="vencedor"] .navbar,
+.page[data-page="fale_conosco"] .navbar,
+.page[data-page="avisos"] .navbar,
+.page[data-page="ocorrencia"] .navbar,
+.page[data-page="problema_estrada"] .navbar,
+.page[data-page="finalizacao_descarga"] .navbar,
+.page[data-page="devolucao_total"] .navbar,
+.page[data-page="devolucao_parcial"] .navbar,
+.page[data-page="problema_caminhao"] .navbar,
+.page[data-page="informa_atraso"] .navbar,
+.page[data-page="problema_caminhao_final"] .navbar,
+.page[data-page="apresentacao_descarga_final"] .navbar,
+.page[data-page="apresentacao_descarga_final_viagens"] .navbar,
+.page[data-page="chegada_origem"] .navbar,
+.page[data-page="problema_estrada_final"] .navbar,
+.page[data-page="devolucao_total_final"] .navbar,
+.page[data-page="resultado_devolucao"] .navbar,
+.page[data-page="finalizacao_descarga_final"] .navbar,
+.page[data-page="devolucao_parcial_final"] .navbar,
+.page[data-page="informa_atraso_final"] .navbar,
+.page[data-page="entregas_home"] .navbar,
+.page[data-page="devolucao_home"] .navbar,
+.page[data-page="opcoes"] .navbar,
+.page[data-page="filtro"] .navbar,
+.page[data-page="perdedor_Oferta"] .navbar,
+.page[data-page="perdedor"] .navbar,
+.page[data-page="opcoes"] .navbar,
+.page[data-page="cadastro"] .navbar,
+.page[data-page="cadastro-2"] .navbar,
+.page[data-page="lances"] .navbar,
+.page[data-page="ofertas_map"] .navbar,
+.page[data-page="ofertas_destino_map"] .navbar,
+.page[data-page="tipo_oferta"] .navbar,
+.page[data-page="minhas_ofertas"] .navbar,
+.page[data-page="minha_agenda"] .navbar,
+.page[data-page="oferta_detalhes"] .navbar,
+.page[data-page="agenda_detalhe"] .navbar,
+.page[data-page="ofertas_filtro"] .navbar,
+.page[data-page="ofertas"] .navbar,
+.page[data-page="termo_contrato"] .navbar,
+.page[data-page="esqueci_senha2"] .navbar,
+.page[data-page="finalizando_cadastro"] .navbar {
+  background-color: #fff;
+  height: 55px;
+}
+
+.page[data-page="walkthrough"] .walkthrough-slide .slide-text {
+  font-size: 15px;
+  /*margin: 0 3%;*/
+  /*padding: 0 27px;;*/
+  margin-top: 8%;
+  line-height: auto !important;
+}
+
+.page[data-page="walkthrough"] .walkthrough-slide .slide-actions {
+  margin: 16px 0;
+  padding: 0 16px;
+}
+
+.page[data-page="walkthrough"] .walkthrough-actions {
+  bottom: 0;
+  box-sizing: border-box;
+  left: 0;
+  margin: 16px 0;
+  padding: 0 16px;
+  position: absolute;
+  width: 100%;
+  z-index: 50;
+}
+
+.page[data-page="walkthrough"] .walkthrough-pagination {
+  bottom: 2%;
+}
+
+.page[data-page="cadastro-2"] img.btvoltar,
+.page[data-page="termo_contrato"] img.btvoltar,
+.page[data-page="finalizando_cadastro"] img.btvoltar,
+.page[data-page="esqueci_senha2"] img.btvoltar,
+.page[data-page="esqueci_senha"] img.btvoltar {
+  /*margin-left: 23px;
+margin-top: 20px;*/
+}
+
+.page[data-page="vencedor"] .navbar,
+.page[data-page="avisos"] .navbar,
+.page[data-page="fale_conosco"] .navbar,
+.page[data-page="opcoes"] .navbar,
+.page[data-page="filtro"] .navbar,
+.page[data-page="perdedor_Oferta"] .navbar,
+.page[data-page="perdedor"] .navbar,
+.page[data-page="tipo_oferta"] .navbar,
+.page[data-page="oferta_detalhes"] .navbar,
+.page[data-page="agenda_detalhe"] .navbar,
+.page[data-page="minhas_ofertas"] .navbar,
+.page[data-page="minha_agenda"] .navbar,
+.page[data-page="lances"] .navbar,
+.page[data-page="cadastro-2"] .navbar,
+.page[data-page="ofertas_map"] .navbar,
+.page[data-page="ofertas_destino_map"] .navbar,
+.page[data-page="termo_contrato"] .navbar,
+.page[data-page="finalizando_cadastro"] .navbar,
+.page[data-page="esqueci_senha2"] .navbar,
+.page[data-page="esqueci_senha"] .navbar {
+  background-color: #fff;
+}
+
+.page[data-page="cadastro-2"] .right,
+.page[data-page="termo_contrato"] .right,
+.page[data-page="finalizando_cadastro"] .right,
+.page[data-page="esqueci_senha"] .right {
+  /*margin-top:22px;
+margin-right: 30%;
+margin-left: 30%;*/
+}
+
+.page[data-page="esqueci_senha"] .imglogo {
+  width: 104px;
+}
+
+.page[data-page="avisos-detalhes"] .logo,
+.page[data-page="vencedor"] .logo,
+.page[data-page="avisos"] .logo,
+.page[data-page="fale_conosco"] .logo,
+.page[data-page="opcoes"] .logo,
+.page[data-page="filtro"] .logo,
+.page[data-page="perdedor_Oferta"] .logo,
+.page[data-page="perdedor"] .logo,
+.page[data-page="tipo_oferta"] .logo,
+.page[data-page="minhas_ofertas"] .logo,
+.page[data-page="minha_agenda"] .logo,
+.page[data-page="oferta_detalhes"] .logo,
+.page[data-page="ofertas_map"] .logo,
+.page[data-page="ofertas_destino_map"] .logo,
+.page[data-page="agenda_detalhe"] .logo,
+.page[data-page="lances"] .logo,
+.page[data-page="cadastro-2"] .logo,
+.page[data-page="termo_contrato"] .logo,
+.page[data-page="finalizando_cadastro"] .logo,
+.page[data-page="esqueci_senha2"] .logo {
+  margin-top: 12px;
+  width: 140px;
+}
+
+.page[data-page="cadastro-2"] .content-block,
+.page[data-page="termo_contrato"] .content-block,
+.page[data-page="finalizando_cadastro"] .content-block,
+.page[data-page="esqueci_senha2"] .content-block,
+.page[data-page="esqueci_senha"] .content-block {
+  margin-left: -15px;
+  margin-top: 20px;
+}
+
+/*alterar background*/
+
+.page[data-page="vencedor"],
+.page[data-page="avisos-detalhes"],
+.page[data-page="avisos"],
+.page[data-page="fale_conosco"],
+.page[data-page="problema_estrada"],
+.page[data-page="informa_atraso"],
+.page[data-page="finalizacao_descarga"],
+.page[data-page="devolucao_total"],
+.page[data-page="devolucao_parcial"],
+.page[data-page="problema_caminhao"],
+.page[data-page="problema_caminhao_final"],
+.page[data-page="apresentacao_descarga_final"],
+.page[data-page="apresentacao_descarga_final_viagens"],
+.page[data-page="chegada_origem"],
+.page[data-page="problema_estrada_final"],
+.page[data-page="finalizacao_descarga_final"],
+.page[data-page="devolucao_parcial_final"],
+.page[data-page="devolucao_total_final"],
+.page[data-page="resultado_devolucao"],
+.page[data-page="informa_atraso_final"],
+.page[data-page="ocorrencia"],
+.page[data-page="entregas_home"],
+.page[data-page="devolucao_home"],
+.page[data-page="opcoes"],
+.page[data-page="filtro"],
+.page[data-page="perdedor_Oferta"],
+.page[data-page="perdedor"],
+.page[data-page="walkthrough"],
+.page[data-page="login"],
+.page[data-page="ofertas_filtro"],
+.page[data-page="ofertas"],
+.page[data-page="opcoes"],
+.page[data-page="cadastro"],
+.page[data-page="cadastro-2"],
+.page[data-page="ofertas_map"],
+.page[data-page="ofertas_destino_map"],
+.page[data-page="esqueci_senha"],
+.page[data-page="tipo_oferta"],
+.page[data-page="minhas_ofertas"],
+.page[data-page="minha_agenda"],
+.page[data-page="oferta_detalhes"],
+.page[data-page="agenda_detalhe"],
+.page[data-page="lances"],
+.page[data-page="esqueci_senha2"],
+.page[data-page="termo_contrato"],
+.page[data-page="dashboard"],
+.page[data-page="finalizando_cadastro"] {
+  background-color: #fff !important;
+}
+
+.page[data-page="cadastro-2"] .barra,
+.page[data-page="esqueci_senha2"] .barra,
+.page[data-page="esqueci_senha"] .barra {
+  position: relative;
+  background-color: #d0021b;
+  width: 10px;
+  height: 90px;
+}
+
+.page[data-page="cadastro-2"] .text {
+  margin-top: 20px;
+}
+
+.page[data-page="esqueci_senha2"] .text,
+.page[data-page="esqueci_senha"] .text {
+  bottom: 112px;
+  position: relative;
+  margin-left: 25px;
+}
+
+.page[data-page="cadastro-2"] p.para1,
+.page[data-page="esqueci_senha2"] p.para1,
+.page[data-page="esqueci_senha"] p.para1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.page[data-page="cadastro-2"] p.para2,
+.page[data-page="esqueci_senha2"] p.para2,
+.page[data-page="esqueci_senha"] p.para2 {
+  font-size: 31px;
+  line-height: 36px;
+  margin: 0;
+}
+
+.page[data-page="cadastro-2"] img.pag2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.page[data-page="esqueci_senha2"] img.pag1,
+.page[data-page="esqueci_senha"] img.pag1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: -52px;
+  position: relative;
+}
+
+.page[data-page="cadastro-2"] .slide-media {
+  text-align: center;
+
+}
+
+
+.page[data-page="cadastro-2"] .option {
+  position: relative;
+  top: 20px;
+}
+
+.page[data-page="cadastro-2"] label.label-switch {
+  position: relative;
+  top: -7px;
+  left: 193px;
+  background-color: #e6e3e3;
+}
+
+.page[data-page="termo_contrato"] .barra {
+  position: relative;
+  background-color: #d0021b;
+  width: 10px;
+  height: 50px;
+}
+
+.page[data-page="finalizando_cadastro"] .barra {
+  position: relative;
+  background-color: #d0021b;
+  width: 10px;
+  height: 90px;
+}
+
+.page[data-page="termo_contrato"] .text {
+  bottom: 38px;
+  position: relative;
+  margin-left: 25px;
+}
+
+.page[data-page="finalizando_cadastro"] .text {
+  bottom: 78px;
+  position: relative;
+  margin-left: 25px;
+}
+
+.page[data-page="termo_contrato"] .para1,
+.page[data-page="finalizando_cadastro"] .para1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.page[data-page="termo_contrato"] .para2,
+.page[data-page="finalizando_cadastro"] .para2 {
+  font-size: 31px;
+  line-height: 36px;
+  margin: 0;
+}
+
+.page[data-page="termo_contrato"] .pagi,
+.page[data-page="finalizando_cadastro"] .pagi {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: -35px;
+  position: relative;
+}
+
+.page[data-page="termo_contrato"] .text-final,
+.page[data-page="finalizando_cadastro"] .text-final {
+  margin: 22px;
+  margin-top: -22px;
+  margin-bottom: 0;
+}
+
+.page[data-page="termo_contrato"] .slide-text,
+.page[data-page="finalizando_cadastro"] .slide-text {
+  font-size: 13px;
+  position: relative;
+  top: -57px;
+}
+
+.page[data-page="problema_estrada_final"] .text-info,
+.page[data-page="finalizacao_descarga_final"] .text-info,
+.page[data-page="devolucao_parcial_final"] .text-info,
+.page[data-page="devolucao_total_final"] .text-info,
+.page[data-page="resultado_devolucao"] .text-info,
+.page[data-page="informa_atraso_final"] .text-info,
+.page[data-page="apresentacao_descarga_final"] .text-info,
+.page[data-page="apresentacao_descarga_final_viagens"] .text-info,
+.page[data-page="chegada_origem"] .text-info,
+.page[data-page="problema_caminhao_final"] .text-info {
+  margin-top: 32px !important;
+}
+
+.page[data-page="fale_conosco"] .text-info {
+  margin-top: -9px !important;
+}
+
+.page[data-page="problema_estrada_final"] .text-info,
+.page[data-page="apresentacao_descarga_final"] .text-info,
+.page[data-page="apresentacao_descarga_final_viagens"] .text-info,
+.page[data-page="chegada_origem"] .text-info,
+.page[data-page="finalizacao_descarga_final"] .text-info,
+.page[data-page="devolucao_parcial_final"] .text-info,
+.page[data-page="resultado_devolucao"] .text-info,
+.page[data-page="devolucao_total_final"] .text-info,
+.page[data-page="informa_atraso_final"] .text-info,
+.page[data-page="problema_caminhao_final"] .text-info {
+  font-size: 16px;
+  /*margin: 22px;*/
+  margin-top: -44px;
+  text-align: center;
+}
+
+.page[data-page="fale_conosco"] .text-info,
+.page[data-page="esqueci_senha2"] .text-info,
+.page[data-page="esqueci_senha"] .text-info {
+  font-size: 16px;
+  margin: 22px;
+  margin-top: -44px;
+}
+
+.page[data-page="agenda_detalhe"] .card-viagens {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.page[data-page="cadastro"] .img-cad2 {
+  display: none;
+  width: 130px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.page[data-page="cadastro-2"] .img-cad2 {
+  display: none;
+  width: 130px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page[data-page="cadastro"] .aceite-termos {
+  margin-left: 40px;
+  margin-right: 30px;
+}
+
+.page[data-page="cadastro-2"] .largura-touch {
+  width: 50px;
+}
+
+.page[data-page="cadastro"] .detalhe-termo {
+  position: relative;
+  margin-left: 40px;
+  top: -32px;
+}
+
+.page[data-page="cadastro"] .aceite-detalhe {
+  text-decoration: underline;
+  color: #00f;
+}
+
+.page[data-page="dashboard"] .notifica-circle {
+  color: #fff;
+  position: relative;
+  top: 8px;
+}

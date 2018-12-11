@@ -1,0 +1,73 @@
+<div data-page="ofertas" class="page">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left">
+        <a href="#" class="link icon-only open-panel">
+          <img style="width: 18px;" src="assets/img/home.png">
+        </a>
+      </div>
+      <div class="center">
+        <div class="logo">
+          <img class="imglogo" src="assets/img/logo.png">
+        </div>
+      </div>
+      <div class="right">
+        <a id="voltar-ofertas" class="link icon-only">
+          <img class="btvoltar" src="assets/img/voltar-esquerda.png">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="page-content pull-to-refresh-content">
+
+    <div class="pull-to-refresh-layer">
+      <div class="preloader"></div>
+      <div class="pull-to-refresh-arrow"></div>
+    </div>
+
+    <!-- Default pull to refresh layer-->
+
+    <div style="margin-bottom: 25px;" class="row">
+      <div class="col-10">
+        <div class="barra"></div>
+      </div>
+      <div class="col-90">
+        <p style="padding-top: 15px;" class="para1">Ofertas de Cargas</p>
+      </div>
+
+    </div>
+
+
+    <div style="width: 100%; margin: 0;font-size: 18px;" class="list-block accordion-list">
+
+      <a class="titulo item-link item-content">
+        <div style="margin-left: 25px;width: 100%;margin-top: 9px;" class="organiza">
+
+          <span style="position: relative;top: -4px;" class="ajuste">Filtros</span>
+          <span class="ajuste2">
+            <img id="filtro-favoritos" style="padding-left: 20px; width: 27px;" src="assets/img/favoritos.png">
+
+            <img id="filtro-direta" style="margin-left: 10%;width: 15px;" src="assets/img/ofertas.png">
+
+            <img id="filtro-leilao" style="margin-left: 10%;width: 27px;" src="assets/img/leilao.png">
+
+            <img id="botao-filtro" style="margin-left: 9%;width: 25px;" src="assets/img/filtro.png">
+            
+            <img id="limpar-filtro" style="display: none; margin-left: 7%;width: 25px;" src="assets/img/limpar.png">
+          </span>
+        </div>
+      </a>
+
+
+    </div>
+
+    <div id="lista-cards"></div>
+    <a id="maisOfertas" page-ofertas="0"  class="button button-big button-fill maisOfertas-on">Mais
+      Ofertas</a>
+    <div style="text-align: center;font-size: 20px;margin: 15px;" id="msg-404"></div>
+    <img style="display: none;" id="lista-img" src="assets/img/nothing.png">
+  </div>
+</div>
+
+<!-- End: Page Content -->
+</div>

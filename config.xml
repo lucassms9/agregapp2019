@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.solucoes.agrega" ios-CFBundleVersion="6" version="1.1.19" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Agrega Truck</name>
+    <description>
+        Uma solução para caminhoneiros e embarcadores.
+    </description>
+    <author email="support@phonegap.com" href="http://phonegap.com">
+        Mobitap Team
+    </author>
+    <preference name="phonegap-version" value="cli-8.0.0" />
+    <content src="index.html" />
+    <access allows-local-networking="true" origin="*" />
+    <allow-navigation href="*" />
+    <allow-intent href="*" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="false" />
+    <platform name="android">
+        <preference name="android-minSdkVersion" value="19" />
+        <icon density="ldpi" src="/res/icon/android/drawable-ldpi-icon.png" />
+        <icon density="mdpi" src="/res/icon/android/drawable-mdpi-icon.png" />
+        <icon density="hdpi" src="/res/icon/android/drawable-hdpi-icon.png" />
+        <icon density="xhdpi" src="/res/icon/android/drawable-xhdpi-icon.png" />
+        <icon density="xxhdpi" src="/res/icon/android/drawable-xxhdpi-icon.png" />
+        <icon density="xxxhdpi" src="/res/icon/android/drawable-xxxhdpi-icon.png" />
+        <splash platform="android" qualifier="ldpi" src="/res/screen/android/screen-ldpi-portrait.png" />
+        <splash platform="android" qualifier="mdpi" src="/res/screen/android/screen-mdpi-portrait.png" />
+        <splash platform="android" qualifier="hdpi" src="/res/screen/android/screen-hdpi-portrait.png" />
+        <splash platform="android" qualifier="xhdpi" src="/res/screen/android/screen-xhdpi-portrait.png" />
+    </platform>
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="whatsapp:*" subdomains="true" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="android">
+        <resource-file src="google-services.json" target="app/google-services.json" />
+    </platform>
+    <platform name="ios">
+        <icon height="48" src="/res/icon/ios/icon-48.png" width="48" />
+        <icon height="55" src="/res/icon/ios/icon-55.png" width="55" />
+        <icon height="88" src="/res/icon/ios/icon-88.png" width="88" />
+        <icon height="172" src="/res/icon/ios/icon-172.png" width="172" />
+        <icon height="196" src="/res/icon/ios/icon-196.png" width="196" />
+        <icon height="180" src="/res/icon/ios/icon-180.png" width="180" />
+        <icon height="60" src="/res/icon/ios/icon-60.png" width="60" />
+        <icon height="120" src="/res/icon/ios/icon-120.png" width="120" />
+        <icon height="167" src="/res/icon/ios/icon-167.png" width="167" />
+        <icon height="76" src="/res/icon/ios/icon-76.png" width="76" />
+        <icon height="152" src="/res/icon/ios/icon-152.png" width="152" />
+        <icon height="20" src="/res/icon/ios/icon-20.png" width="20" />
+        <icon height="40" src="/res/icon/ios/icon-40.png" width="40" />
+        <icon height="80" src="/res/icon/ios/icon-80.png" width="80" />
+        <icon height="29" src="/res/icon/ios/icon-29.png" width="29" />
+        <icon height="58" src="/res/icon/ios/icon-58.png" width="58" />
+        <icon height="87" src="/res/icon/ios/icon-87.png" width="87" />
+        <icon height="57" src="/res/icon/ios/icon-57.png" width="57" />
+        <icon height="114" src="/res/icon/ios/icon-114.png" width="114" />
+        <icon height="72" src="/res/icon/ios/icon-72.png" width="72" />
+        <icon height="144" src="/res/icon/ios/icon-144.png" width="144" />
+        <icon height="50" src="/res/icon/ios/icon-50.png" width="50" />
+        <icon height="100" src="/res/icon/ios/icon-100.png" width="100" />
+        <icon height="1024" src="/res/icon/ios/icon-appstore.png" width="1024" />
+        <splash src="/res/screen/ios/Default@2x~universal~anyany.png" />
+        <preference name="target-device" value="universal" />
+        <preference name="deployment-target" value="8.0" />
+        <access allows-arbitrary-loads-in-web-content="true" origin="http://qa-app.agrega.tech/*" />
+        <edit-config file="*-Info.plist" mode="merge" target="NSCameraUsageDescription">
+            <string>A câmera é utilizada para obter documentos</string>
+        </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" target="NSLocationWhenInUseUsageDescription">
+            <string>Sua localização é utilizada ao reportar cargas, entregas e problemas no transporte</string>
+        </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" target="NSPhotoLibraryAddUsageDescription">
+            <string>A biblioteca de fotos é utilizada para armazenar documentos</string>
+        </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" target="NSPhotoLibraryUsageDescription">
+            <string>A biblioteca de fotos é utilizada para obter documentos</string>
+        </edit-config>
+    </platform>
+    <plugin name="cordova-plugin-battery-status" spec="~1.2.4" />
+    <plugin name="cordova-plugin-camera" spec="~2.4.1" />
+    <plugin name="cordova-plugin-media-capture" spec="~1.4.3" />
+    <plugin name="cordova-plugin-device" spec="~1.1.6" />
+    <plugin name="cordova-plugin-dialogs" spec="~1.3.3" />
+    <plugin name="cordova-plugin-file" spec="~4.3.3" />
+    <plugin name="cordova-plugin-geolocation" spec="~2.4.3" />
+    <plugin name="cordova-plugin-globalization" spec="~1.0.7" />
+    <plugin name="cordova-plugin-inappbrowser" spec="~1.7.1" />
+    <plugin name="cordova-plugin-network-information" spec="~1.3.3" />
+    <plugin name="cordova-plugin-vibration" spec="~2.1.5" />
+    <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
+    <plugin name="cordova-plugin-browsertab" spec="^0.2.0" />
+    <plugin name="phonegap-plugin-push" spec="^2.1.3">
+        <variable name="FCM_VERSION" value="11.6.2" />
+    </plugin>
+    <plugin name="cordova-plugin-appavailability" spec="^0.4.2" />
+    <plugin name="cordova-plugin-x-socialsharing" spec="^5.4.0" />
+    <plugin name="cordova-plugin-splashscreen" spec="~5.0.2" />
+    <engine name="android" spec="^7.1.4" />
+    <engine name="ios" spec="~4.5.4" />
+</widget>
