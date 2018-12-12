@@ -8,8 +8,8 @@ myApp.onPageInit("vencedor", function (page) {
     var oferta = data.result.oferta;
     console.log(oferta);
 
-    if (oferta.data_previsao_destino != null) {
-      let data_origem = quebraDatas(oferta.data_previsao_destino);
+    if (oferta.data_previsao_origem != null) {
+      let data_origem = quebraDatas(oferta.data_previsao_origem);
       let hora = data_origem[3];
       let min = data_origem[4];
       let ano = data_origem[2];
@@ -320,12 +320,18 @@ myApp.onPageInit("vencedor", function (page) {
       let min = hora1[1].trim();
       
       let dataFinal = ano + '-' + mes + '-' + dia;
-    
-      var dataPrevFinal = new Date(dataFinal);
-      var dataPrev = new Date(dataPrevInicio);
+      var today = new Date();
+      var dd = today.getDate();
+      var mm = today.getMonth() + 1;
+      var yyyy = today.getFullYear();
+      var data_show = dd + '-' + datas[parseInt(mm)] + '-' + yyyy;
 
-      if (dataPrevFinal < dataPrev) {
-        return myApp.alert('Colocar data Igual ou Superior a data ' + data_inicio);
+      var dataPrevFinal = new Date(dataFinal);
+      var dataValida = new Date(yyyy+'-'+mm+'-'+dd);
+     
+
+      if (dataPrevFinal < dataValida) {
+        return myApp.alert('Colocar data Igual ou Superior a data ' + data_show);
       }
       var data_completa = ano + '-' + mes + '-' + dia + ' ' + hora + ':' + min + ':00';
 

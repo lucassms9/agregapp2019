@@ -160,8 +160,8 @@ myApp.onPageInit("agenda_detalhe", function (page) {
 
     }
 
-    if (oferta.data_previsao_destino != null) {
-      let data_origem = quebraDatas(oferta.data_previsao_destino);
+    if (oferta.data_previsao_origem != null) {
+      let data_origem = quebraDatas(oferta.data_previsao_origem);
       let hora = data_origem[3];
       let min = data_origem[4];
       let ano = data_origem[2];
@@ -177,8 +177,8 @@ myApp.onPageInit("agenda_detalhe", function (page) {
       compraDatasOrigem[0] = ano + '/' + mes + '/' + dia;
     }
 
-    if (oferta.data_previsao_origem != null) {
-      let data_origem = quebraDatas(oferta.data_previsao_origem);
+    if (oferta.data_previsao_destino != null) {
+      let data_origem = quebraDatas(oferta.data_previsao_destino);
       let hora = data_origem[3];
       let min = data_origem[4];
       let ano = data_origem[2];
@@ -595,7 +595,7 @@ myApp.onPageInit("agenda_detalhe", function (page) {
 
       dataDestinoPrev = new Date(dataDestinoPrev.split('/').reverse().join('/'));
       dataDestinoReal = new Date(dataDestinoReal.split('/').reverse().join('/'));
-      if (dataOrigemPrev < dataOrigemReal) {
+      if (dataOrigemPrev > dataOrigemReal) {
         $('.chegada-destino-ok').css({
           color: '#ff0000',
         });
